@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <style>
+        .tablero {position: fixed;
+        width: 800px; height: 800px;
+            margin: 10px;
+            border: solid;
+            border-color: black;
+        }
+
+        .cuadrado {margin: 10px; color: white;
+            background-color: darkolivegreen; padding-bottom: 50px;
+            padding-right: 50px;
+            padding-left: 50px;
+            padding-top: 50px;
+        }
+        #n1 {position: absolute; top: 10%; left: 10%}
+        #n2 {position: absolute; top: 10%; right: 10%}
+        #n3 {position: absolute; bottom: 10%; left: 10%;}
+        #n4 {position: absolute; bottom: 10%; right: 10%}
+
+    </style>
+
+    <title>CSS. Posicionamiento fijo</title>
+
+</head>
+<body>
+<header>
+    <h1>Posicionamiento Fijo</h1>
+</header>
+
+<section class="tablero">
+    <article class="cuadrado" id="n1"> 1</article>
+    <article class="cuadrado" id="n2"> 2</article>
+    <article class="cuadrado" id="n3"> 3</article>
+    <article class="cuadrado" id="n4"> 4</article>
+</section>
+</body>
+</html>

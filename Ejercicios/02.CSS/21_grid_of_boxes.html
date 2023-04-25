@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+    <link href="multimedia/logoweb.png" rel="shortcut icon" type="imagenes/png"/>
+    <title>Grid of Boxes</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        /*La propiedad css box sizing nos permite incluir el relleno y el borde en el ancho y alto total de un elemento.
+                          border-box: Las propiedades de width y height incluyen el contenido, relleno y borde, pero no incluye el margen.*/
+
+        .box {
+            float: left;
+            width: 33%;
+            padding: 50px;
+            border: solid;
+            border-color: black;
+            background-color: #FFFF00;
+        }
+
+        .clearfix::after { /*content: "-";*/
+            content: url("multimedia/logoweb.png");
+            clear: both;
+            display: table;
+        }
+
+        .color1 {
+            background-color: #8CABD9;
+        }
+
+        .color2 {
+            background-color: #F6A7B8;
+        }
+
+        .color3 {
+            background-color: #F08838;
+        }
+
+        figure {
+            border: thin #146767 solid;
+            display: flex;
+            flex-flow: column;
+            padding: 5px;
+            max-width: 220px;
+            margin: auto;
+        }
+
+        figcaption {
+            background-color: #1D4D9F;
+            color: yellow;
+            font-size: small; font-style: italic;
+            padding: 3px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <h1>
+        Grid of Boxes
+    </h1>
+</header>
+<section>
+    <p>Float boxes side by side</p>
+
+    <article class="clearfix">
+
+        <div class="box color1">
+            <p>Some text inside the box</p>
+            <figure>
+                <img alt="uno" src="multimedia/1.png">
+                <figcaption>Imagen 1</figcaption>
+            </figure>
+        </div>
+        <div class="box color2">
+            <p>Some text inside the box</p>
+            <figure>
+                <img alt="dos" src="multimedia/2.png">
+                <figcaption>Imagen 2</figcaption>
+            </figure>
+        </div>
+        <div class="box color3">
+            <p>Some text inside the box</p>
+            <figure>
+                <img alt="tres" src="multimedia/3.png">
+                <figcaption>Imagen 3</figcaption>
+            </figure>
+        </div>
+
+    </article>
+
+    <p>
+        Note that we will also use the clearfix hack to take care of the layout
+        flow, and that add the box-sizing property to make sure that the box
+        does not break due to extra padding. Try to remove this code to see the
+        effect.
+    </p>
+    <p>
+        What is box-sizing? you can easily create three floating boxes side by
+        side. However, when you add something that enlarges the width of each
+        box (e.g. padding or borders), the box will break. The box-sizing
+        property allows us to include the padding and border in the box´s
+        total width (and height), making sure that the padding o stays inside
+        the box and that it does not break.
+    </p>
+
+</section>
+<footer>
+    <details>
+        <summary> &copy; Instituto Tame</summary>
+        <p>Todos los derechos reservados</p>
+    </details>
+
+</footer>
+</body>
+</html>

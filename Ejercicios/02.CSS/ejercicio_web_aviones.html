@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Pagina Principal- CSS" name="description">
+    <meta content="David Macías" name="author">
+    <meta content="David Macías" name="copyright">
+    <meta content="html5,css, css3,nuevas etiquetas, etiquetas comunes" name="keywords">
+    <meta content="Instituto Tame" name="organization"/>
+    <meta content="es" name="language"/>
+
+    <title>CSS - Practica 1- Selectores </title>
+    <style>
+        body {
+            background: -webkit-radial-gradient(rgb(255, 255, 255), rgb(105, 105, 105));
+            background: radial-gradient(rgb(255, 255, 255), rgb(105, 105, 105));
+
+            font-family: "helvetica";
+        }
+
+        .h1 {
+            font-size: xxx-large;
+            text-align: center;
+            text-shadow: 1px 1px 5px #aaa;
+            background-color: #383838;
+            color: #BAAA1C;
+            border: solid;
+            border-color: black;
+            border-width: 1px;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 1px 1px 1px dimgrey;
+        }
+
+        .h1art {
+            font-size: xx-large;
+            text-align: center;
+            background-color: #383838;
+            color: #BAAA1C;
+            border: solid;
+            border-color: black;
+            border-width: 1px;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 5px 5px 5px dimgrey;
+        }
+
+        .h2 {
+            font-size: x-large;
+            text-align: center;
+            background-color: #383838;
+            color: #BAAA1C;
+            border: solid;
+            border-color: black;
+            border-width: 1px;
+            border-radius: 10px;
+            width: min-content;
+            padding: 15px;
+            box-shadow: 5px 5px 5px dimgrey;
+        }
+
+        li {
+            padding: 15px;
+            border: solid;
+            border-color: black;
+            border-width: 1px;
+            border-radius: 10px;
+            display: inline;
+            background-color: #383838;
+            color: #BAAA1C;
+            box-shadow: 5px 5px 5px dimgrey;
+        }
+
+        li:hover {
+            border-color: white;
+        }
+
+        li:visited {
+            text-decoration: none;
+            text-underline: none
+        }
+
+        section {
+            width: 65%;
+            padding: 15px;
+            border: solid;
+            border-color: black;
+            border-width: 1px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px dimgrey;
+            float: left;
+            margin-bottom: 40px;
+
+        }
+
+        aside {
+            width: 30%;
+            padding: 5px;
+            border: solid;
+            border-color: black;
+            border-width: 1px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 5px dimgrey;
+            float: right;
+        }
+
+        nav {
+            padding-left: 35%;
+            padding-bottom: 15px;
+            display: inline-block;
+
+        }
+
+        footer {
+            clear: both;
+        }
+
+        footer > p {
+            text-align: right;
+        }
+
+        p {
+            text-align: justify;
+        }
+
+#asignatura {text-align: left;}
+        a {
+            text-decoration: none;
+            color: #BAAA1C;
+        }
+
+        a:visited {
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: orangered;
+        }
+
+        article > div {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<header>
+    <h1 class="h1">HIGH TECH MOTORBIKES</h1>
+
+<nav>
+    <ul>
+        <li><a href="https://solomoto.es/">Principal</a></li>
+        <li><a href="https://www.instagram.com/solomoto.es/">Instagram</a></li>
+        <li><a href="https://www.youtube.com/@solomotoweb">Videos</a></li>
+        <li><a href="https://www.chiquitoipsum.com/">Contacto</a></li>
+    </ul>
+</nav>
+</header>
+<section>
+    <article id="articulo_1">
+        <header>
+            <hgroup>
+                <h1 class="h1art">Aston Martin</h1>
+                <h2 class="h2">Brough Superior AMB-001</h2>
+            </hgroup>
+            <time datetime="10/03/2023">publicado 10/03/2023
+            </time>
+        </header>
+        <p> La última asociación que ha revolucionado las llamadas "motos boutique" ha sido entre las icónicas compañías
+            británicas Aston Martin y Brough Superior para crear una edición limitada a 100 unidades de este modelo
+            AMB-001. Resucita el concepto de las motocicletas turbo que se diluyó en la década de los 80 y cuenta con un
+            motor bicilíndrico en V de 88 grados y 8 válvulas de 997 cc mejorado con un turbocompresor moderno de baja
+            inercia y un intercooler. El motor mecanizado por CNC actúa como un componente de carga total, mientras que
+            el bastidor auxiliar trasero de fibra de carbono y las interfaces de titanio garantizan una mayor reducción
+            de peso por debajo de los 180 kilos. </p>
+        <figure>
+            <img alt="Aston Martin Brough Superior AMB-001" src="multimedia/Brough_Superior.png">
+            <figcaption> Brough Superior AMB-001</figcaption>
+        </figure>
+        <footer>
+            <p>comentarios (0)</p>
+        </footer>
+    </article>
+</section>
+
+
+<aside id="aside_1">
+
+    <h2>Información de Interés</h2><br>
+    <p><strong>País de fabricación</strong> Inglaterra<br>
+        <strong>Atención al cliente:</strong> +44 (0)1926 644644 <br>
+        <strong>Puntos de venta</strong> <a href="https://www.astonmartin.com/en-us/dealers">ver</a> <br>
+        <strong>Competiciones</strong> Formula 1 <br></p> <br>
+
+    <p>Web Site <br>
+        <a href="https://www.astonmartin.com/">Aston Martin</a></p>
+
+</aside>
+<section>
+    <article id="articulo_2">
+        <header>
+            <hgroup>
+                <h1 class="h1art">Ducati</h1>
+                <h2 class="h2">Panigale V4</h2>
+            </hgroup>
+            <time datetime="10/03/2023">publicado 10/03/2023
+            </time>
+        </header>
+
+        <p>Con el nuevo motor V4, la Ducati Panigale se convierte en la nueva y flamante Panigale V4 y marca un nuevo e
+            importante capítulo en la historia de Ducati, una “sinfonía” de prestaciones y emociones que es 100%
+            italiana. Panigale V4 es la primera moto de Ducati fabricada en serie que está equipada con un motor de 4
+            cilindros, estrechamente derivado de la Desmosedici de MotoGP.</p>
+        <figure>
+            <img alt="Ducati Panigale v4" src="multimedia/panigale_v4.png">
+            <figcaption> Ducati Panigale v4</figcaption>
+        </figure>
+        <footer>
+            <p>comentarios (0)</p>
+        </footer>
+    </article>
+</section>
+<aside id="aside_2">
+
+    <h2>Información de Interés</h2><br>
+    <p><strong>País de fabricación</strong> Italia<br>
+        <strong>Atención al cliente:</strong> 00 33 9 69 39 36 54 <br>
+        <strong>Puntos de venta</strong> <a href="https://ducatimadrid.com/store/">ver</a> <br>
+        <strong>Competiciones</strong> Moto GP<br></p> <br>
+
+    <p>Web Site <br>
+        <a href="https://www.ducati.com"> Ducati </a></p>
+
+
+</aside>
+<footer>
+    <details>
+        <summary>&copy; Derehos CopyRight.</summary>
+        <p>Todos los derechos reservados 2022-2022 <br>
+            Todo el contenido y gráficos de este sitio web corresponde al examen Marcas &copy;Rafael Acosta.
+        </p>
+    </details>
+    <p id="asignatura"><strong>Asignatura: Lenguaje de Marcas - 2T Examén </strong></p>
+    <address>1 Ciclo Grado Superior.</address>
+</footer>
+
+</body>
+
+</html>

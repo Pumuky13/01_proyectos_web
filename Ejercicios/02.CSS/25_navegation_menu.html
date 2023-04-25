@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+    <link rel="shortcut icon" type="imagenes/png" href="multimedia/logoweb.png"/>
+    <title>Navigation menu</title>
+    <style>
+
+        ul {
+            overflow: hidden; /*limita el desbordamiento*/
+            list-style: none; /*oculta los puntos de la lista*/
+            padding: 0;
+            margin: 0;
+            background-color: #fac699;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: inline-block; /*transforma el elemento a bloque y se le puede cambiar las propiedades de altura*/
+            padding: 16px 16px;
+            text-align: center;
+            text-decoration: none;
+            color: #e76278;
+        }
+
+        li a:hover {
+            display: inline-block;
+            color: #4f8a83;
+            background-color: #712164;
+            text-decoration: none;
+        }
+
+        li a:visited {
+            text-decoration: none;
+        }
+
+        .active {
+            background-color: #d7dddb;
+        }
+
+        header {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <h1>Navigation menu</h1>
+    <nav>
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+</header>
+<section></section>
+<br/><br/>
+<footer>
+    <details>
+        <summary> &copy; Tame Formación</summary>
+        <p>Todos los derechos reservados</p>
+    </details>
+
+</footer>
+</body>
+</html>

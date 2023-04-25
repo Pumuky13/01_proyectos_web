@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios HTML</title>
+</head>
+<body>
+<header><h1>Elementos de formularios HTML</h1></header>
+<section>
+    <hr>
+    <h2>Elemento: input text</h2>
+    <article>
+        <form action="dirección del script" name="formulario_01" id="formulario_01" method="post">
+            <label for="id_escritora">Escriba Nombre</label>
+            <input id="id_escritora" name="escritora" placeholder="Escriba aquí su escritora..." type="text"> <br/><br/>
+            <label for="id_apellido">Escribe Apellido(s):</label>
+            <input id="id_apellido" name="apellido" placeholder="Escriba aquí su apellido" type="text"><br/><br/>
+
+            <hr>
+            <h2>Elemento: data list</h2>
+
+            <label for="idioma">Seleccione un idioma</label>
+            <input id="idioma" list="idiomas" name="idiomas">
+            <datalist id="idiomas">
+                <option value="Inglés"></option>
+                <option value="Alemán"></option>
+                <option value="Español"></option>
+                <option value="Francés"></option>
+            </datalist>
+            <br><br>
+            <label for="list_idiomas">Sugerencia de idioma:</label>
+            <input id="list_idiomas" list="sugerencias">
+            <datalist id="sugerencias">
+                <option label="Es" value="Español">
+                <option label="In" value="Inglés">
+                <option label="Fr" value="Francés">
+            </datalist>
+
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpiar">
+            <input alt="botón rojo" onclick="msgExit()" src="multimedia/img/boton_rojo.png" type="image">
+            <input onclick="msg()" type="button" value="saludar">
+            <script>
+                function msg() {
+                    alert("Hola");
+                }
+
+                function msgExit() {
+                    alert("Infección en curso");
+                }
+            </script>
+            <hr>
+            <h2>selección de una opción</h2>
+            <fieldset>
+                <legend>Seleccione una opción:</legend>
+                <input id="id_gm" name="grado" type="radio" value="grado medio">
+                <label for="id_gm">Grado medio</label>
+                <br>
+                <input checked id="id_gs" name="grado" type="radio" value="grado superior">
+                <label for="id_gs">Grado superior</label>
+
+            </fieldset>
+            <br>
+            <wbr>
+            <hr>
+            <h2>Selección múltiple</h2><br>
+            <fieldset>
+                <legend>seleccione tipo de transporte</legend>
+                <input checked id="vehiculo1" name="vehiculo1" type="checkbox" value="Bicicleta">
+                <label for="vehiculo1">Bicicleta</label><br>
+                <input checked id="vehiculo2" name="vehiculo2" type="checkbox" value="Motocicleta">
+                <label for="vehiculo2">Motocicleta</label><br>
+                <input id="vehiculo3" name="vehiculo3" type="checkbox" value="Automóvil">
+                <label for="vehiculo3">Automóvil</label>
+            </fieldset>
+            <br>
+            <hr>
+            <p><strong>Ocultar texto en celda</strong></p><br>
+            <fieldset><label for="id_clave">Teclee password: </label>
+                <input id="id_clave" name="clave" type="password" value="Escriba su nombre aquí"></fieldset>
+            <br>
+            <hr>
+            <p><strong>Enviar archivos</strong></p> <br>
+            <fieldset>
+                <br>
+                <div><label for="file">Seleccione los archivos a enviar</label><br><br><br>
+                    <input accept=".jpg, . jpeg, .png, .pdf" id="file" multiple name="file" type="file" value="100">
+                </div>
+                <br>
+                <input type="button" value="enviar">
+                <br><br>
+                <button name="btn_enviar" type="button">Click para enviar (botón)</button>
+            </fieldset>
+        </form>
+        <hr>
+        <h1>Formularios con lista</h1><br><br>
+        <p><strong>- Ejemplo 1:</strong></p><br>
+        <form id="list1" name="list1" method="post">
+            <label for="id_provincia">Seleccione la provincia:</label>
+            <select
+                    id="id_provincia"
+                    name="provincia">
+                <option value="AB">Albacete</option>
+                <option value="CR">Ciudad Real</option>
+                <option value="CU">Cuenca</option>
+            </select>
+        </form>
+
+        <p><strong>- Ejemplo 2:</strong></p><br>
+
+        <form id="list2" name="list2" method="post">
+
+
+            <label for="id_provincia2">Seleccione la provincia:</label>
+            <select
+                    id="id_provincia2"
+                    multiple name="provincia">
+                <option value="AB">Albacete</option>
+                <option value="CR">Ciudad Real</option>
+                <option value="CU">Cuenca</option>
+            </select></form>
+
+        <p><strong>- Ejemplo 3:</strong></p> <br>
+        <form id="list3" name="list3" method="post">
+            <label for="id_paises">Seleccione País:</label><br>
+            <select id="id_paises" name="paises">
+                <optgroup label="Europa">
+                    <option selected value="españa">España</option>
+                    <option value="francia">Francia</option>
+                    <option value="italia">Italia</option>
+                    <option value="alemania">Alemania</option>
+                </optgroup>
+                <optgroup label="America">
+                    <option value="eeuu">EEUU</option>
+                    <option value="cuba">Cuba</option>
+                    <option value="pr">Puerto Rico</option>
+                    <option value="Colombia"></option>
+                </optgroup>
+
+            </select></form>
+    </article>
+</section>
+</body>
+</html>

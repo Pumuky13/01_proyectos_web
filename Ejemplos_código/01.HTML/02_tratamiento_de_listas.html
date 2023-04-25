@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>HTML 5 - Listas</title>
+</head>
+<body>
+<header><h1>Listas HTML</h1></header>
+<section>
+    <article id="article01">
+        <p>La lista en HTML nos permite crear conjuntos de elementos en forma de lista dentro de
+            una página, todos los cuales irán precedidos, generalmente, por un guion o número.</p>
+        <p>Los tipos de listas en HTML son los siguientes:</p>
+        <ul>
+            <li><p><a href=#a2 title="ir a listas desordenadas">"Listas desordenadas"</a></p></li>
+            <li><p><a href=#a1 title="ir a listas ordenadas">"Listas ordenadas"</a></p></li>
+            <li><p><a href=#a3 title="ir a listas de definiciones">"Listas de definiciones"</a></p></li>
+            <li><p><a href=#a4 title="ir a listas anidadas">"Listas anidadas"</a></p></li>
+        </ul>
+    </article>
+    <article id="a1">
+        <header><h2>"Listas ordenadas"></h2></header>
+        <p>Las listas ordenadas en HTML son aquellas que nos muestran los elementos de la lista
+            en orden. Para representar el orden tendremos los elementos numerados. Es decir, cada
+            uno de los elementos irá precedido de un número o letra que establezca su orden.</p>
+        <p>Las listas ordenadas en HTML se representan mediante el elemento <em>OL</em>. Veamos un
+            ejemplo:</p>
+        <ol>
+            <li>
+                <p>Elemento 1</p>
+            </li>
+            <li>
+                <p>Elemento 2</p>
+            </li>
+            <li>
+                <p>Elemento 3</p>
+            </li>
+        </ol>
+    </article>
+    <article id="article03">
+        <header>
+            <h3>Número de inicio de la lista: start</h3>
+        </header>
+        <p>El atributo <strong>start</strong> nos permite indicar el número por el cual queremos que empiece la
+            lista, ya que por defecto las listas ordenadas en HTML empiezan por el número 1.</p>
+        <ol start="5">
+            <li>Val&egrave;ncia</li>
+            <li>Castellón</li>
+            <li>Alicante</li>
+        </ol>
+    </article>
+    <header><h3>Tipo de lista ordenada: type</h3></header>
+    <p>De igual manera podemos indicar el tipo de lista ordenada en HTML que queremos
+        representar.</p>
+    <p>Entre los tipos de listas que podemos representar tenemos:</p>
+    <pre>
+        1 - Listas decimales
+        a - Listas alfabéticas en minúsculas
+        A - Listas alfabéticas en mayúsculas
+        i - Listas de números romanos en minúsculas
+        I - Listas de números romanos en mayúsculas
+        </pre>
+    <p>Veamos un ejemplo</p>
+    <ol type="A">
+        <li>Julio</li>
+        <li>Carmen</li>
+        <li>Ignacio</li>
+        <li>Elena</li>
+    </ol>
+    <article id="article04">
+        <header>
+            <h3>Listas en orden inverso: reversed</h3>
+        </header>
+        <p>En HTML 5 aparece el atributo reversed para las listas ordenadas. El atributo reversed
+            nos permite invertir el orden de la lista. Es decir, realiza la numeración de la lista de
+            forma inversa.</p>
+        <p>Para utilizarlo simplemente indicamos el atributo reversed sobre el elemento <em>OL</em>.</p>
+        <p>Si tenemos la lista:</p>
+        <table>
+            <thead>
+            <tr>
+                <th><strong>Sin atributo reversed</strong></th>
+                <th><strong>Con atributo reversed</strong></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>
+                    <ol>Julio</ol>
+                </td>
+                <td>
+                    <ol reversed>Julio</ol>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ol>Carmen</ol>
+                </td>
+                <td>
+                    <ol reversed>Carmen</ol>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ol>Ignacio</ol>
+                </td>
+                <td>
+                    <ol reversed>Ignacio</ol>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ol>Elena</ol>
+                </td>
+                <td>
+                    <ol reversed>Elena</ol>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </article>
+</section>
+<section id="a2">
+    <header>
+        <h2>Listas Desordenadas</h2></header>
+    <p>Las listas desordenadas en HTML nos sirven para mostrar los elementos sin ningún tipo
+        de orden, simplemente precedidos por una viñeta que puede ser un punto, un
+        cuadrado,...</p>
+    <ul>Elemento 1</ul>
+    <ul>Elemento 2</ul>
+    <ul>Elemento 3</ul>
+</section>
+<section id="a3">
+    <header>
+        <h2>Listas de Definiciones</h2></header>
+    <p>Las listas de definiciones en HTML nos sirven para montar listas en las que tenemos la
+        estructura valor y definición. Suelen ser listas para definir términos, como si fuese un
+        diccionario, si bien pueden ser cualquier par valor-definición.</p>
+    <dl>
+        <dt>Término 1</dt>
+        <dd>Definición 1</dd>
+
+        <dt>Término 2</dt>
+        <dd>Definición 2</dd>
+
+        <dt>Término 3</dt>
+        <dd>Definición 3</dd>
+    </dl>
+</section>
+<section id="a4">
+    <header>
+        <h2>Listas anidadas</h2>
+    </header>
+    <p>Cuando estemos manejando listas podemos anidar unas en otras independientemente del
+        tipo de lista que estemos anidando</p>
+    <p>Para crear listas anidadas en HTML simplemente tenemos que hacer que el elemento de
+        una de las listas sea a su vez una lista. Es decir, el esquema de listas sería parecido al
+        siguiente:</p>
+    <ul>
+        <li>Carnívoro
+            <ul>
+                <li>León</li>
+                <li>Buitre</li>
+                <li>Hiena</li>
+            </ul>
+        </li>
+        <li>Herbívoro
+            <ul>
+                <li>Cabra</li>
+                <li>Vaca</li>
+            </ul>
+        </li>
+        <li>Omnívoro
+            <ul>
+                <li>Oso</li>
+                <li>Urraca</li>
+            </ul>
+        </li>
+    </ul>
+</section>
+</body>
+</html>

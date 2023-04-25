@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Nuevos elementos para formularios HTML5</title>
+</head>
+<body>
+<header><h1>Nuevos elementos para formularios HTML5</h1></header>
+
+<form action="" id="elem_forms_html5" method="post" name="elem_forms_html5">
+    <p><strong>Barra de progreso</strong></p>
+    <hr>
+    <label for="file1">file progress:</label>
+    <br>
+    <progress id="file1" max="100" value="70">70%</progress>
+    <br><br>
+    <hr>
+
+    <p><strong>Seleccionar fecha</strong></p>
+    <label for="id_fecha">calendario</label>
+    <br>
+    <input id="id_fecha" name="fecha" type="date">
+    <br><br>
+    <hr>
+
+    <p><strong>Fecha y hora local</strong></p>
+    <label for="id_tiempolocal">Selecciona fecha y hora (local:)</label>
+    <br>
+    <input id="id_tiempolocal" name="tiempolocal" type="datetime-local">
+    <br><br>
+    <hr>
+
+    <p><strong>Calendario mes</strong></p>
+    <label for="id_month">Mes</label>
+    <br>
+    <input id="id_month" name="mes" type="month">
+    <br><br>
+    <hr>
+
+    <p><strong>Rueda de color/seleccionar color</strong></p>
+    <label for="id_color">Color</label>
+    <br>
+    <input id="id_color" name="color" type="color">
+    <br><br>
+    <hr>
+
+    <p><strong>EMAIL</strong></p>
+    <label for="id_email">Introduzca su email</label>
+    <br>
+    <input id="id_email" name="email" placeholder="escriba su email" type="email">
+    <br><br>
+    <hr>
+
+    <p><strong>ID PHONE</strong></p>
+    <label for="id_phone"> introduzca su número de teléfono</label>
+    <br>
+    <input id="id_phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" placeholder="123-456-789" required
+           type="tel"><br>
+    <small>Formato: 123-456-789</small>
+    <br><br>
+    <hr>
+
+    <p><strong>Barra de búsqueda</strong></p>
+    <label for="id_busqueda">Buscar</label>
+    <br>
+    <input id="id_busqueda" name="busqueda" type="search">
+    <br><br>
+    <hr>
+
+    <p><strong>Rango de valores</strong></p>
+    <label for="id_rangovalores">número de billets:</label>
+    <br>
+    <input id="id_rangovalores" max="10" min="0" name="rangovalores" step="1" type="range" value="50">
+    <br>
+    <p>Audio settings:</p>
+    <div><input id="volume" max="100" min="0" name="volume" type="range"> <label
+            for="volume"></label></div>
+    <br>
+
+    <hr>
+    <p><strong>Selección por números</strong></p>
+    <label for="id_numeros">Número de billetes:</label>
+    <br>
+    <input id="id_numeros" max="15" min="0" name="numeros" step="3" type="number">
+    <br><br>
+    <hr>
+</form>
+
+</body>
+</html>

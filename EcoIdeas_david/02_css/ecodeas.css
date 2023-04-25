@@ -1,0 +1,386 @@
+* {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+@font-face {
+    src: url("../fonts/cooper-black.ttf");
+    font-family: pepito;
+}
+
+@font-face {
+    src: url("../fonts/AvantGarde_Book.ttf");
+    font-family: avant;
+}
+
+#index {
+    width: 100%;
+    height: 50%;
+    background-image: url("../img/otrabasura.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 1vw;
+}
+
+#vidrio {
+    width: 100%;
+    height: 50%;
+    background-image: url("../img/Upcycling-glass-copy.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 1vw;
+}
+
+#madera {
+    width: 100%;
+    height: 50%;
+    background-image: url("../img/Madera/PortadaMadera.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 1vw;
+}
+
+#metal {
+    width: 100%;
+    height: 50%;
+    background-image: url("../img/rentabilidad-y-sostenibilidad.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 1vw;
+}
+
+#textil {
+    width: 100%;
+    height: 50%;
+    background-image: url("../img/rentabilidad-y-sostenibilidad.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 1vw;
+}
+
+#revista {
+    width: 100%;
+    height: 50%;
+    background-image: url("../img/por_que_es_importante_reciclar_el_papel_y_carton_1571_600.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 1vw;
+}
+
+#shop {
+    width: 100%;
+    height: 50%;
+    background-image: url("../img/Carta_Riciclata.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 1vw;
+}
+
+h1 {
+    font-family: pepito, sans-serif;
+    font-size: 10vw;
+    text-align: left;
+    background: #e1a8c9;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    padding-top: 5vw;
+    padding-bottom: 3vw;
+    padding-left: 5vw;
+    color: transparent;
+    text-decoration: none;
+}
+
+h1 a {
+    text-decoration: none;
+}
+
+h1 a:hover {
+    text-decoration: none;
+}
+
+h1 a:visited {
+    text-decoration: none;
+}
+
+h2 {
+    padding-left: 7vw;
+    padding-top: 0;
+    font-family: pepito, sans-serif;
+    font-size: 3vw;
+    text-align: left;
+    background: #9fcac0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    margin-top: -4vw;
+    margin-bottom: 4vw;
+    color: transparent;
+}
+
+h3 {
+    text-align: center;
+    position: relative;
+    display: block;
+    width: 100%;
+    font-family: avant, sans-serif;
+    font-size: 3vw;
+    color: dimgrey;
+    padding: 2vw;
+}
+
+
+nav {
+    margin: 11.1vw 25%;
+    position: relative;
+    width: 43vw;
+    height: 2.7vw;
+    background-color: #ffffff;
+    border-radius: 8px;
+    font-size: 0.5vw;
+    opacity: 60%;
+
+}
+
+nav a {
+    line-height: 2.5vw;
+    height: 100%;
+    font-size: 1.5vw;
+    font-family: pepito, serif;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-align: center;
+    color: #000000;
+    cursor: pointer;
+
+}
+
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+}
+
+a:nth-child(1) {
+    width: 5.8vw;
+}
+
+a:nth-child(2) {
+    width: 5.8vw;
+}
+
+a:nth-child(3) {
+    width: 5.8vw;
+}
+
+a:nth-child(4) {
+    width: 5.7vw;
+}
+
+a:nth-child(5) {
+    width: 6.1vw;
+}
+
+a:nth-child(6) {
+    width: 6.2vw;
+}
+
+a:nth-child(7) {
+    width: 5.9vw;
+}
+
+nav .start-home, a:nth-child(1):hover ~ .animation {
+    width: 5.9vw;
+    left: 0;
+    background-color: #e1a8c9;
+}
+
+nav a:nth-child(2):hover ~ .animation {
+    width: 5.8vw;
+    left: 5.8vw;
+    background-color: #469101;
+}
+
+nav a:nth-child(3):hover ~ .animation {
+    width: 6.2vw;
+    left: 11.6vw;
+    background-color: #e5e502;
+}
+
+nav a:nth-child(4):hover ~ .animation {
+    width: 6vw;
+    left: 17.7vw;
+    background-color: #ffa600;
+}
+
+nav a:nth-child(5):hover ~ .animation {
+    width: 6.2vw;
+    left: 23.6vw;
+    background-color: #7244ff;
+}
+
+nav a:nth-child(6):hover ~ .animation {
+    width: 7vw;
+    left: 29.5vw;
+    background-color: #004ec2;
+}
+
+nav a:nth-child(7):hover ~ .animation {
+    width: 6.5vw;
+    left: 36.5vw;
+    background-color: #ff0000;
+}
+
+section > article > p {
+    display: block;
+    margin-top: 3vw;
+    width: 50%;
+    font-family: avant, sans-serif;
+    font-size: 16px;
+    color: dimgrey;
+    position: relative;
+    text-align: justify;
+}
+
+section > article > ol {
+    display: block;
+    margin-top: 3vw;
+    width: 50%;
+    font-family: avant, sans-serif;
+    font-size: 16px;
+    color: dimgrey;
+    position: relative;
+    text-align: justify;
+}
+
+li {
+    margin: 2vw 0;
+}
+
+figure {
+    margin: 2% 25%;
+    width: 50%;
+}
+
+figure > img {
+    width: 100%;
+    height: auto;
+    border: solid #004ec2 5px;
+    border-radius: 8px;
+}
+
+.caja {
+    width: 98%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-evenly;
+}
+
+.contenedor { border-radius: 3vw;
+    width: 90%;
+    margin: 3vw 2vw;
+    border: 2px solid #e1a8c9;
+    box-shadow: #505050 5px 5px 10px; display: grid;
+}
+.contenedor img { width: 60%; border-radius: 3vw; margin: 1vw auto;}
+.contenedor p { width: 60%; border-radius: 3vw; margin: 1vw auto;}
+
+
+footer {
+    margin-top: 5vw;
+    background: gray;
+    padding: 2vw;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: mistyrose;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #ffa600;
+}
+
+footer a:hover {
+    color: #ff00dd;
+}
+
+.boton {
+    text-align: center;
+    font-size: 15px;
+    color: #ffffff;
+    border-radius: 8px;
+    background-color: #e1a8c9;
+    padding: 5px 0;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    transition: all 300ms ease 0ms;
+    z-index: 99;
+}
+
+.boton:hover {
+    background-color: #9fcac0;
+    transform: translateY(-7px);
+}
+
+.boton2 {
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    color: #ffffff;
+    border-radius: 8px;
+    background-color: #e1a8c9;
+    padding: 10px 10px;
+    position: relative;
+    margin: 0 50%;
+}
+
+.boton2:hover {
+    background-color: #9fcac0;
+}
+
+@media only screen and (max-width: 600px) {
+    .btn-flotante {
+        font-size: 12px;
+        padding: 10px 10px;
+        bottom: 20px;
+        right: 20px;
+    }
+    .caja {
+        width: 98%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: space-evenly;
+    }
+
+    .contenedor { border-radius: 3vw;
+        width: 90%;
+        margin: 3vw 2vw;
+        border: 2px solid #e1a8c9;
+        box-shadow: #505050 5px 5px 10px; display: grid;
+    }
+    .contenedor img { width: 60%; border-radius: 3vw; margin: 1vw auto;}
+    .contenedor p { width: 60%; border-radius: 3vw; margin: 1vw auto;}
+}
+
+/*edu
+
+.caja {
+    clear: both;
+    display: table;
+}
+
+.contenedor {
+    float: left;
+    padding: 1vw;
+    width: 30%;
+    text-align: center;
+}*/

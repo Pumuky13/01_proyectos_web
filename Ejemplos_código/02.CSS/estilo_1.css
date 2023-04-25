@@ -1,0 +1,6 @@
+/* cambiar el estilo, alineación a los párrafos y fuente*/
+p {
+    font-style: italic;
+    text-align: justify;
+    font-family: Arial, helvetica, sans-serif;
+}

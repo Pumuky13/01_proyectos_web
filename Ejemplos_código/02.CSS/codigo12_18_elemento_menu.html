@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS. Elementos Menu</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        header {
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            border-radius: 1px 1px;
+            box-shadow: rgb(150, 150, 150) 5px 5px;
+            background-color: #31374d;
+            color: #ffffff;
+        }
+
+        /* Article 1 - Menu horizontal */
+
+        .nav1 {
+            overflow: hidden;
+            background-color: #333;
+            width: 100%;
+
+
+        }
+
+        .nav1 a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .nav1 a:hover {
+            background-color: #146767;
+
+            color: white;
+        }
+
+        .nav1 a.active {
+            background-color: #146767;
+            color: white;
+        }
+
+        /* oculta el menú móvil, para pantallas distintas a resolución móvil */
+        .nav1 .icon {
+            display: none;
+        }
+
+        /* Article 2 - MENU Navegación estilo 2 , Elementos a Izquierda y Derecha */
+
+        .nav2 {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .nav2 a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .nav2 a:hover {
+            background-color: #146767;
+            color: white;
+        }
+
+        .nav2 a.active {
+            background-color: #146767;
+            color: white;
+        }
+
+        .nav2-right {
+            float: right;
+        }
+
+        /* Article 3 - MENU horizontal responsive */
+        .nav3 {
+            width: 100%;
+            background-color: #333;
+            overflow: auto;
+        }
+
+        .nav3 a {
+            float: left;
+            padding: 12px;
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+            width: 20%; /* ancho del elemento */
+            text-align: center;
+        }
+
+        .nav3 a:hover {
+            background-color: #146767;
+            color: white;
+        }
+
+        .nav3 a.active {
+            background-color: #146767;
+        }
+
+        /* Article 4 - Menu sobre imagen */
+
+        /* Caja con la imagen y el nav */
+        .box-img {
+            background-image: url("airbus380.jpeg");
+            min-height: 580px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative; /* referencia de direccionamiento para el nav*/
+        }
+
+        /* contenedor que contiene el nav */
+        .container {
+            position: absolute;
+            margin: 20px;
+            width: auto;
+        }
+
+        .nav4 {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+
+        .nav4 a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .nav4 a:hover {
+            background-color: #146767;
+            color: white;
+        }
+
+
+        /********  Media queries *************** */
+
+        /* article 1 */
+        @media screen and (max-width: 600px) {
+
+            header {display: none;}
+            .nav1 {
+                position: fixed;
+                top: 0;
+            }
+            .nav1 a:not(:first-child) {
+                display: none;
+            }
+
+            .nav1 a.icon {
+                float: right;
+                display: block;
+            }
+
+            .nav1.responsive .icon {
+                position: absolute;
+                right: 0;
+                top: 0;
+            }
+
+            .nav1.responsive a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+            /* article 2 */
+            .nav2 {
+                display: none
+            }
+
+            /* article 3 */
+            .nav3 a {
+                float: none;
+                display: block;
+                width: 100%;
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Elementos: Menu</h1>
+</header>
+<article id="a1">
+    <h2>Barra navegación horizontal</h2>
+    <nav class="nav1" id="menu1">
+        <a href="#" class="active">Inicio</a>
+        <a href="#">Conocenos</a>
+        <a href="#">Servicios</a>
+        <a href="#">Ofertas</a>
+        <a href="#">Menú Rápido</a>
+        <a href="javascript:void(0);" class="icon" onclick="menuMovil()">&#9776;</a>
+    </nav>
+    <p><strong>void()</strong> de forma general, es uan función que no devuelve valor, independientemente de los
+        parámetros que tenga. Es una función vacía
+        <br/>
+        <strong>javascript:</strong> Es una pseudo URL. Cuando un navegador recibe este valor como el valor de href en
+        una etiqueta
+        de enlace, interpreta el código JS que sigue los dos puntos (:) en lugar de tratar el valor como una ruta de
+        referencia.
+    </p>
+</article>
+<article id="a2">
+    <h2>Barra navegación horizontal con elementos a izquierda y derecha</h2>
+    <nav class="nav2">
+        <a href="#" class="active">Inicio</a>
+        <a href="#">Conocenos</a>
+        <a href="#">Servicios</a>
+        <a href="#">Ofertas</a>
+        <a href="#">Menú Rápido</a>
+        <div class="nav2-right">
+            <a href="#">Buscar</a>
+            <a href="#">Enlaces</a>
+        </div>
+    </nav>
+</article>
+<article id="a3">
+    <h2>Barra navegación horizontal RESPONSIBLE</h2>
+    <nav class="nav3">
+        <a href="#" class="active">Inicio</a>
+        <a href="#">Conocenos</a>
+        <a href="#">Servicios</a>
+        <a href="#">Ofertas</a>
+        <a href="#">Menú Rápido</a>
+    </nav>
+</article>
+<article id="a4">
+    <h2>Barra navegación con imágenes </h2>
+    <div class="box-img">
+        <div class="container">
+            <nav class="nav4">
+                <a href="#">Detalles</a>
+                <a href="#">Enlace</a>
+                <a href="#">Mapa de imagen</a>
+            </nav>
+        </div>
+    </div>
+</article>
+<script>
+    /* script de menu horizontal y con estilo para resolución móvil del article id=a1 */
+    function menuMovil() {
+        let x = document.getElementById("menu1");
+        if (x.className === "nav1") {
+            x.className += " responsive";
+        } else {
+            x.className = "nav1";
+        }
+    }
+</script>
+</body>
+</html>

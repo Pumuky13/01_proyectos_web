@@ -1,0 +1,94 @@
+h1 {
+    position: fixed;
+    text-align: left;
+    padding-left: 3%;
+    font-size: xxx-large;
+    z-index: 10;
+}
+
+h2  {text-align: left;}
+
+* {
+    box-sizing: border-box;
+    font-family: Arial, helvetica, sans-serif;
+}
+
+ul {
+    overflow: hidden; /*limita el desbordamiento*/
+    list-style: none; /*oculta los puntos de la lista*/
+    padding: 0; margin-right: 3vw; margin-top: 3vw;
+}
+
+li {
+    float: right; padding: 1vw;
+}
+
+li a {
+    display: flex; flex-flow: row; margin-top: 3vw; flex-direction: row-reverse;
+    text-align: center;
+    text-decoration: none;
+}
+
+li a:hover {
+    display: flex; flex-flow: row; flex-direction: row-reverse;
+    color: red;
+    text-decoration: none;
+}
+
+li a:visited { flex-direction: row-reverse;
+    text-decoration: none;
+}
+.imagecontainer { display: flex; flex-direction: row; width: 100%; flex-wrap: wrap;}
+img {
+    margin: 1%; padding: 2%; width: 48%; height: auto;
+}
+@font-face {
+    font-family: casio; src: url("../multimedia/casio-fx-702p.ttf");
+}
+
+section {
+    display: flex;
+    flex-flow: column;
+    text-align: justify;
+    margin-top: 1%;
+    width: 40%;
+    margin-left: 15vw;
+}
+
+#ultima {
+    margin-bottom: 10%;
+}
+
+h2 {
+    font-size: xxx-large;
+    margin-top: 5%;
+    width: 40%;
+    margin-left: 15vw;
+}
+
+h3 {
+    margin-top: 5%;
+    width: 40%;
+    margin-left: 15vw;
+}
+
+h4 {
+    margin-top: 1%;
+    width: 40%;
+    margin-left: 15vw;
+}
+
+br {
+    margin: 1vw;
+}
+.animationbackground {line-height: 3VW; width: 100%; background-color: #000000;}
+.animation {font-family: casio; position: relative;
+    font-size: 3vw;
+    color: #00FF00;
+    padding: 1vw; animation-name: ledscreen; animation-direction: normal; animation-duration: 60s;
+    animation-iteration-count: infinite;}
+@keyframes ledscreen {
+0%   {left:100%;}
+100% {left: -100%;}
+}
+

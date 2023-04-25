@@ -1,0 +1,129 @@
+@font-face {
+    font-family: Galguis;
+    src: url("multimedia/fonts/Galgo.woff");
+}
+
+* {
+    box-sizing: border-box;
+    font-family: Galguis;
+
+}
+
+header {
+    margin: 3vw;
+    text-align: center;
+    font-size: 3vw;
+    background-color: #83ccf6;
+    color: ghostwhite;
+    box-shadow: 5px 5px 5px #063558;
+    border-radius: 2vw;
+}
+
+h2 {
+    text-align: center;
+}
+
+ul {
+    box-shadow: 5px 5px 5px #063558;
+    border-radius: 1vw;
+    float: left;
+    list-style-type: none;
+    padding: 0;
+    margin: 3vw;
+    width: 200px;
+    background-color: #83ccf6;
+}
+
+
+li a {
+    text-align: center;
+    font-size: 2vw;
+    padding: 8px 16px;
+    margin: 0;
+    text-decoration: none;
+    color: ghostwhite;
+    display: block;
+
+}
+
+li a:hover {
+    text-align: center;
+    color: #83ccf6;
+    background-color: ghostwhite;
+}
+
+li a:visited {
+    text-decoration: none;
+}
+
+article {
+    margin: 3vw;
+    box-shadow: 5px 5px 5px #063558;
+    border-radius: 2vw;
+    padding: 15px;
+    background-color: #83ccf6;
+    color: ghostwhite;
+    float: left;
+    font-size: 2vw;
+    width: 50%;
+    height: auto;
+}
+
+img {
+    width: 98%;
+    height: auto;
+}
+
+aside {
+    background-color: #83ccf6;
+    color: ghostwhite;
+    box-shadow: 5px 5px 5px #063558;
+    border-radius: 2vw;
+    width: 18%;
+    text-align: justify;
+    font-size: 1.5vw;
+    padding: 8px 16px;
+    margin: 3vw;
+    float: left;
+}
+
+section {
+    overflow: auto;
+}
+
+footer {
+    font-size: 3vw;
+    background: -webkit-linear-gradient(#063558, #83ccf6, #f8f8ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    clear: both;
+}
+
+@media only screen and (max-width: 800px) {
+    /*for tablets*/
+    article {
+        width: 80%;
+        padding: 10px;
+    }
+
+    aside {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    /*for mobile phones*/
+    nav, article, aside {
+        width: 95%; margin: 1vw; padding: 1vw;
+    }
+    body {background-color: orange;}
+
+    li a { /*padding: 8px;*/
+        text-decoration: underline black;
+        text-align: center;
+    }
+
+    /*si queremos ocultar el aside*/
+    aside {display: none;
+    }
+}

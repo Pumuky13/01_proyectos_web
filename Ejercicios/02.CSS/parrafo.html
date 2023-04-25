@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>CSS3. Border-redondo</title>
+    <meta content="text/html;charset=utf-8" http-equiv="content-type">
+    <style>
+        @-webkit-keyframes blinker {
+            from { opacity: 1.0; }
+            to { opacity: 0.0; }
+        }
+
+        h1 { -webkit-animation-name: blinker;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: cubic-bezier(.5, 0, 1, 1);
+            -webkit-animation-duration: 0.3s;
+            text-shadow: 2px 2px 5px lightsteelblue;
+        }
+
+        article {
+            padding: 3%;
+            margin: 3%;
+            background-color: mintcream;
+            box-shadow: 10px 10px 15px lightsteelblue;
+            border-radius: 15px;
+            column-count: 4;
+            column-rule: 2px solid mintcream;
+            column-width: 140px; /*esta propiedad indica el mínimo a la columna para cuando cambiemos de pantalla*/
+        }
+        @import url('https://fonts.googleapis.com/css2?family=Life+Savers&display=swap');
+        * {
+            font-family: 'Life Savers', cursive;
+        }
+
+        img {
+            padding-top: 30px;
+            padding-bottom: 30px;
+            max-width: 100%;
+            display: block;
+            column-span: all;
+            border-radius: 100px;
+            margin: 0 auto;
+            width: 90%;
+            height: auto;
+        }
+
+        article h2 {
+            column-span: all; /*permite expandir el texto para ocupar to_do el texto de las columnas*/
+        }
+
+    </style>
+</head>
+<body>
+
+
+<section>
+    <h1>CSS3. Columnas</h1>
+
+    <article>
+        <h2>Muestra del libro "El principito"</h2>
+        <p>La historia comienza con el aviador contando que, cuando era niño, dibujó una boa comiéndose un elefante,
+            pero
+            los adultos pensaban que había dibujado un sombrero. Cuando el aviador intentó corregirlos, los adultos le
+            dijeron que dejase de dibujar y se dedicase a algo más productivo, algo que hace que el aviador se lamente
+            de la
+            falta de imaginación de los adultos.</p>
+
+        <p> De adulto, el aviador, que ahora es piloto, sufre un incidente cuando su avión se avería en el desierto del
+            Sáhara, lejos de todo contacto humano. Mientras intenta arreglar su avión, aparece un niño que el aviador
+            apoda
+            como el principito. El niño le pide al aviador que le dibuje un cordero y este, en su lugar, le enseña su
+            antiguo dibujo de la boa devorando al elefante. Para su sorpresa, el principito entiende el dibujo a la
+            perfección y el aviador decide entonces dibujarle el cordero. Sin embargo, al verse incapaz de dibujarlo,
+            dibuja
+            en su lugar una caja y le dice al principito que el cordero está en el interior de la misma, que solo debe
+            usar
+            su imaginación, y el principito acepta el dibujo.</p>
+        <img alt="Imagen del principito" class="imgborde_redondo imgcolumna" src="multimedia/principito.jpg"/>
+        <p>Los días pasan y el aviador sigue intentando reparar su avión, sin éxito. Mientras tanto, el principito le
+            cuenta la historia de cómo llegó a la Tierra. Según cuenta, él procede de un pequeño planeta, el Asteroide
+            B-612, que es poco más grande que una casa y tiene tres pequeños volcanes, uno de ellos inactivo, y gran
+            variedad de plantas. Se pasa el día limpiando los volcanes y quitando algunas semillas de malas hierbas,
+            como
+            las semillas de los árboles baobabs.
+        </p>
+    </article>
+</section>
+</body>
+</html>

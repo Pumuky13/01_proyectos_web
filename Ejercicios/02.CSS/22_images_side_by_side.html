@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+    <link href="multimedia/logoweb.png" rel="shortcut icon" type="imagenes/png"/>
+    <title>Images side by side</title>
+    <style>
+        * {
+            /*La propiedad css box sizing nos permite incluir el relleno y el borde en el ancho y alto total de un elemento.
+                   border-box: Las propiedades de width y height incluyen el contenido, relleno y borde, pero no incluye el margen.*/
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .img-container {
+            float: left;
+            padding: 50px;
+            width: 33%;
+            height: auto;
+
+        }
+
+        .clearfix {
+            width: 100%;
+            clear: both;
+            display: table;
+            /* display: especifica el comportamiento de visualización (el tipo de cuadro de representación) de un elemento.
+                       display:table; Estos elementos se comportan como elementos HTML <table>. Define un cuadro de nivel de bloque.*/
+        }
+
+        /*-El pseudo-selector ::after  inserta algo después del contenido de cada elemento seleccionado
+        - El pseudo-selector ::before para insertar antes del contenido.
+        Utilizamos la propiedad content para especificar el contenido que se va a insertar.*/
+
+        p.ejemplopseudoelemento::before {
+            content: "Inicio del parrafo (añadido con pseudo-class::before)";
+            color: red;
+
+        }
+
+        p.ejemplopseudoelemento::after {
+            content: "Final del párrafo - texto añadido con pseudo-class::after";
+            color: blue;
+        }
+
+        h1:hover { /*El selector de pseudoclase se usa para definir un estado especial en un elemento*/
+            font-size: xxx-large;
+            color: lawngreen;
+        }
+
+        .img-container:hover {
+            width: 34%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Images side by side</h1>
+</header>
+<section>
+    <p>Float images side by side</p>
+    <div class="clearfix">
+        <div class="img-container">
+            <img alt="Puerto" src="multimedia/pr1.jpg"/>
+        </div>
+        <div class="img-container">
+            <img alt="Playa" src="multimedia/pr2.jpg"/>
+        </div>
+        <div class="img-container">
+            <img
+                    alt="Selva"
+                    src="multimedia/pr3.jpg"
+            />
+        </div>
+    </div>
+    <p class="ejemplopseudoelemento">
+        Note that we also use the clearfix hack to take care of the layout flow,
+        and that we add the box-sizing property to make sure that the image
+        container doesn´t break due to extra padding. Try to remove this code to
+        see the effect
+    </p>
+</section>
+<footer>
+    <details>
+        <summary> &copy; Tame Formación</summary>
+        <p>Todos los derechos reservados</p>
+    </details>
+
+</footer>
+</body>
+</html>

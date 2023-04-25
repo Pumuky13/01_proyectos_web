@@ -1,0 +1,330 @@
+/*degradado redondeado*/
+{
+    border-radius: 30px
+;
+    box-shadow: 15px 15px 5px grey
+;
+}
+/*--------------------------------------------------------------------------------------*/
+/*degradado letras*/
+{
+    font-size: 3vw
+;
+    font-family: "Arial Black", sans-serif
+;
+    background: -webkit-linear-gradient(greenyellow, deeppink)
+;
+    -webkit-background-clip: text
+;
+    -webkit-text-fill-color: transparent
+;
+}
+/*-----------------------------------------------------------------------------------------*/
+/*texto en columnas con separadores*/
+{
+    column-count: 3
+;
+    column-rule: 2px solid orangered
+;
+}
+/*-----------------------------------------------------------------------------------------------*/
+/*Texto responsive*/
+/* vw 1 viewport equivale al 1% del tamaño de la pantalla en que se está mostrando */
+{
+    font-size: 3vw
+;
+    line-height: 10vw
+; /*interlineado*/
+    text-indent: 150px
+; /*separación entre letras en texto*/
+}
+{
+    font-weight: bold
+;
+    word-spacing: 20px
+; /*separación entre palabras en texto*/
+    text-shadow: 2px 2px orange
+; /*propiedad de css3*/
+}
+/*------------------------------------------------------------------------------------------------*/
+{ /*::first-line regla para definir el color de la primera línea de un texto*/
+    text-decoration: line-through
+;
+    color: #FF1E1E
+;
+    text-transform: capitalize
+;
+}
+/*---------------------------------------------------------------------------------------------------*/
+/*referencia de fuente desde @import y se copia desde la página en la sección css de la página*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@font-face {
+    /*referencia a una fuente en nuestra base de datos*/
+    font-family: city;
+    src: url("multimedia/fonts/ElectricityCity-Regular.ttf");
+}
+/*----------------------------------------------------------------------------------------------------*/
+{ /*hay que elegir el font family*/
+    font-size: xxx-large
+;
+    font-family: city
+;
+}
+/*--------------------------------------------------------------------------------------------------------*/
+.parr_columna {
+    column-span: all; /*permite expandir el texto para ocupar to_do el texto de las columnas*/
+    column-count: 4;
+    column-rule: 2px solid mintcream;
+    column-width: 140px; /*esta propiedad indica el mínimo a la columna para cuando cambiemos de pantalla*/
+}
+/*-----------------------------------------------------------------------------------------------------------*/
+.elemento_sombra {
+    background-color: mintcream;
+    box-shadow: 10px 10px 15px lightsteelblue;
+    border-radius: 15px;
+}
+/*---------------------------------------------------------------------------------------------------------------*/
+{ /*al darle a la imagen un float: left, esta flotará a la derecha y el elemento que la acompaña la envolverá*/
+    float: left
+;
+    padding: 10px
+;
+    border: 10px ridge brown
+;
+    width: 170px
+;
+    height: 170px
+;
+    margin: 10px 10px 10px 15px
+;
+}
+/*-----------------------------------------------------------------------------------------------------------------*/
+{ /*opacidad*/
+    border: solid 1px black
+;
+    background-color: white
+;
+    opacity: 0.8
+;
+}
+/*-----------------------------------------------------------------------------------------------------------------*/
+ul { /*barra de navegación vertical*/
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+    background-color: #8a8a8a;
+}
+li a {
+    padding: 8px 16px;
+    margin: 0;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+li a:hover {
+    color: #ff7b7b;
+    background-color: #FFFF00;
+}
+li a:visited {
+    text-decoration: none;
+}
+/*------------------------------------------------------------------------------------------------------------------*/
+{ /*el usuario no puede seleccionar el texto*/
+    user-select: none;
+}
+/*------------------------------------------------------------------------------------------------------------------*/
+{ /*al darle a la imagen un float: left, esta flotará a la derecha y el elemento que la acompaña la envolverá*/
+    float: left;
+    padding: 10px;
+    border: 10px ridge brown;
+    width: 170px;
+    height: 170px;
+    margin: 10px 10px 10px 15px;
+}
+/*-------------------------------------------------------------------------------------------------------------------*/
+{ /*La propiedad css box sizing nos permite incluir el relleno y el borde en el ancho y alto total de un elemento.
+                  border-box: Las propiedades de width y height incluyen el contenido, relleno y borde, pero no incluye el margen.*/
+    box-sizing: border-box;
+}
+{
+    border: thin #146767 solid;
+    display: flex;
+    flex-flow: column;
+    padding: 5px;
+    max-width: 220px;
+    margin: auto;
+}
+/*-----------------------------------------------------------------------------------------------------------------*/
+/*-El pseudo-selector ::after  inserta algo después del contenido de cada elemento seleccionado
+        - El pseudo-selector ::before para insertar antes del contenido.
+        Utilizamos la propiedad content para especificar el contenido que se va a insertar.*/
+
+p.ejemplopseudoelemento::before {
+    content: "Inicio del parrafo (añadido con pseudo-class::before)";
+    color: red;
+}
+
+p.ejemplopseudoelemento::after {
+    content: "Final del párrafo - texto añadido con pseudo-class::after";
+    color: blue;
+}
+h1:hover { /*El selector de pseudoclase se usa para definir un estado especial en un elemento*/
+    font-size: xxx-large;
+    color: lawngreen;
+}
+/*--------------------------------------------------------------------------------------------------------------------*/
+ul {/*lista como menú de navegación horizontal*/
+    overflow: hidden; /*limita el desbordamiento*/
+    list-style: none; /*oculta los puntos de la lista*/
+    padding: 0;
+    margin: 0;
+    background-color: #fac699;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block; /*transforma el elemento a bloque y se le puede cambiar las propiedades de altura*/
+    padding: 16px 16px;
+    text-align: center;
+    text-decoration: none;
+    color: #e76278;
+}
+
+li a:hover {
+    display: inline-block;
+    color: #4f8a83;
+    background-color: #712164;
+    text-decoration: none;
+}
+
+li a:visited {
+    text-decoration: none;
+}
+
+.active {
+    background-color: #d7dddb;
+}
+/*--------------------------------------------------------------------------------------------------------*/
+::first-line {
+    color: #FF1E1E;
+    font-variant: all-small-caps;
+}
+::first-letter {
+    color: #00FFD1;
+    font-size: xxx-large;
+    font-weight: bolder;
+}
+/*Primera línea de un párrafo
+You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more
+ text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and
+more, and more, and more.
+
+ You can use the ::first-line pseudo-element to add a special effect to the
+ first line of a text. Some more
+ text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and
+more, and more, and more.*/
+/*-----------------------------------------------------------------------------------------------------------*/
+
+/* Etiquetas Posicionamiento*/
++++{position: relative;
+padding: 10px 100px 10px 100px;
+width: 100px;
+height: 100px;
+left: 150px;}
+
++++{position: fixed;
+    width: 800px; height: 800px;}
++++{position: absolute;
+    width: 900px;
+    height: 900px;
+    margin: 20px;
+    left: 5%;
+z-index: 1; /*se usa para determinar la posición de las capas mas al frente o más al fondo*/}
+
+/*----------------------------------------------+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+@keyframes h1 {/*keyframes se usa para hacer animaciones*/
+    0%   {color:red;left: 1vw;}
+    50% {color: white; left: -1vw;}
+    100% {color:black;left: 1vw;}
+} h1 {animation-name: h1; animation-duration: 6s;
+animation-iteration-count: infinite;}
+  /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
+
+@keyframes logo {
+    0% { left: 1vw;
+        z-index: 4;
+    }
+    10% { left: 2vw;
+        z-index: 3;
+    }
+    20% { left: 3vw;
+        z-index: 4;
+    }
+    30% { left: 4vw;
+        z-index: 3;
+    }
+    40% { left: 5vw;
+        z-index: 4;
+    }
+    50% { left: 6vw;
+        z-index: 3;
+    }
+    60% { left: 5vw;
+        z-index: 4;
+    }
+    70% { left: 4vw;
+        z-index: 3;
+    }
+    80% { left: 3vw;
+        z-index: 4;
+    }
+    90% { left: 2vw;
+        z-index: 3;
+    }
+    100% { left: 1vw;
+        z-index: 4;
+    }
+
+}
+
+@keyframes logo1 {
+    0% { right: 1vw;
+        z-index: 3;
+    }
+
+    10% { right: 2vw;
+        z-index: 4;
+    }
+    20% { right: 3vw;
+        z-index: 3;
+    }
+    30% { right: 4vw;
+        z-index: 4;
+    }
+    40% { right: 5vw;
+        z-index: 3;
+    }
+    50% { right: 6vw;
+        z-index: 4;
+    }
+    60% { right: 5vw;
+        z-index: 3;
+    }
+    70% { right: 4vw;
+        z-index: 4;
+    }
+    80% { right: 3vw;
+        z-index: 3;
+    }
+    90% { right: 2vw;
+        z-index: 4;
+    }
+    100% { right: 1vw;
+        z-index: 3;
+    }
+}
+/*************************************************************************************************************************/

@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+}
+
+header img {
+    position: absolute;
+    display: block;
+    width: 20%;
+    height: auto;
+    margin: 3vw 40%;
+}
+
+.logo {
+    animation-name: logo;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    transition: ease-in;
+}
+
+.logo1 {
+    animation-name: logo1;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    transition: ease-in;
+}
+
+@keyframes logo {
+    0% {
+        right: 50px;
+        z-index: 4;
+    }
+    85% { right: 1px;
+        z-index: 4;
+    }
+    95% {
+        filter: blur(1px);
+    }
+}
+
+@keyframes logo1 {
+    0% {
+        left: 50px;
+        z-index: 3;
+    }
+    85% {left: 1px;
+        z-index: 3;
+    }
+    95% {
+        filter: blur(1px);
+    }
+}

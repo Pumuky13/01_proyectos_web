@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+
+    <title>links</title>
+    <style>
+        @font-face {
+            font-family: Unown;
+            src: url("multimedia/fonts/Unown.ttf");
+        }
+
+        @font-face {
+            font-family: galguis;
+            src: url("multimedia/fonts/Galgo.woff");
+        }
+
+        p::first-line {
+            color: #FF1E1E;
+            font-variant: all-small-caps;
+        }
+
+        p.intro::first-letter {
+            font-family: galguis;
+        }
+
+        p.intro::first-letter {
+            color: #00FFD1;
+            font-size: xxx-large;
+            font-weight: bolder;
+        }
+
+        p.intro_verde a {
+            text-decoration: none;
+            text-underline: none;
+        }
+
+        p.intro_verde a:hover {
+            text-decoration: none;
+            text-underline: none;
+        }
+
+        p.intro_verde a:visited {
+            text-decoration: none;
+            text-underline: none;
+            color: blue;
+        }
+
+        p.intro_verde::first-letter {
+            color: greenyellow;
+            font-size: xxx-large;
+            font-weight: bolder;
+        }
+
+        p.multiple::first-letter {
+            color: blue;
+            font-size: xxx-large;
+            font-weight: bolder;
+        }
+
+        p.multiple::first-line {
+            color: #F08838;
+            font-family: Unown;
+        }
+
+        /*El pseudo elemento ::selection permite marcar/seleccionar cualquier texto y cambiar formas, colores, etc...*/
+
+        ::selection {
+            color: #FFFF00;
+            background: #d851fa;
+        }
+
+        article {
+            width: 65%;
+            padding: 15px;
+            box-shadow: 5px 5px 5px dimgrey;
+            margin-bottom: 40px;
+            border-left: solid #F1EC7A;
+            border-left-width: 15px;
+
+        }
+
+
+    </style>
+</head>
+<body>
+<section>
+    <article>
+        <h3>Primera línea de un párrafo</h3>
+        <p>You can use the ::first-line pseudo-element to add a special effect to the first line of a text. Some more
+            text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and
+            more, and more, and more.
+            <wbr>
+            You can use the ::first-line pseudo-element to add a special effect to the
+            first line of a text. Some more
+            text. And even more, and more, and more, and more, and more, and more, and more, and more, and more, and
+            more, and more, and more.
+        </p>
+    </article>
+    <br>
+    <article>
+        <h3>Primera letra de un párrafo</h3>
+        <p class="intro">This is an introduction.</p>
+        <p>This is a paragraph with some text. A bit more text even.</p>
+    </article>
+    <article>
+        <h3>Pseudoelementos y clases</h3>
+        <p class="intro_verde"><a href="">Mouse over the links and watch them change layout:</a></p>
+
+    </article>
+    <article>
+        <h3>Pseudoelementos y clases</h3>
+        <p class="multiple">You can combine the ::first-letter and ::first-line pseudo-elements to add a special effect
+            to the first letter and the first line of a text!</p>
+
+    </article>
+</section>
+</body>
+</html>

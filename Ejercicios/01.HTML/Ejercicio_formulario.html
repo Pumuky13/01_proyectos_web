@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="text/html; ISO-8859-1" http-equiv="Content-Type">
+    <meta content="David Macías Navarro" name="copyright">
+    <meta content="David Macías Navarro" name="author">
+    <meta content="formulario sobre cine" name="description">
+    <meta content="cine,película,argumento,visionadas,encuesta" name="keywords">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Cuestionario de cine</title>
+</head>
+<body>
+<header>
+    <h1>Cuestionario de Cine</h1>
+</header>
+<main>
+    <fieldset>
+        <legend><strong>Datos Personales</strong></legend>
+        <br>
+        <form id="datos_personales" name="datos_personales" method="post">
+            <label for="id_nombre">Nombre</label><br>
+            <input id="id_nombre" name="nombre" type="text"><br/><br/>
+            <label for="id_apellido">Apellidos:</label><br>
+            <input id="id_apellido" name="apellido" type="text"><br><br>
+            <label for="id_DNI">DNI:</label><br>
+            <input id="id_DNI" name="DNI" type="text"><br><br>
+            <label for="id_edad">Edad:</label><br>
+            <input id="id_edad" name="edad" type="text">
+            <br><br/>
+            <label for="id_sexo">Sexo:</label>
+            <select
+                    id="id_sexo"
+                    name="sexo">
+                <option selected value="O">Otro</option>
+                <option value="H">Hombre</option>
+                <option value="M">Mujer</option>
+            </select>
+        </form>
+    </fieldset>
+    <br>
+</main>
+<section>
+    <fieldset>
+        <legend><strong>Mejor Película</strong></legend>
+        <br>
+        <form id="mejor_pelicula" name="mejor_pelicula" method="post">
+
+            <input id="id_el_padrino" name="Película" type="radio" value="id_el_padrino">
+            <label for="id_el_padrino"><img alt="El padrino" src="MULTIMEDIA/IMG/el_padrino.png">El padrino</label>
+            <br>
+            <input checked id="id_doce_hombres_sin_piedad" name="Película" type="radio"
+                   value="id_doce_hombres_sin_piedad">
+            <label for="id_doce_hombres_sin_piedad"><img alt="Doce hombres sin piedad"
+                                                         src="MULTIMEDIA/IMG/12angrymen.jpg">Doce hombres sin piedad</label>
+            <br>
+            <input id="id_Espartaco" name="Película" type="radio" value="id_Espartaco">
+            <label for="id_Espartaco"><img alt="Espartaco" src="MULTIMEDIA/IMG/espartaco.jpg">Espartaco</label>
+            <br>
+            <input id="id_7_samurais" name="Película" type="radio" value="id_7_samurais">
+            <label for="id_7_samurais"><img alt="Los 7 Samurais" src="MULTIMEDIA/IMG/7Samurais.jpg">Los 7
+                Samurais</label>
+            <br>
+            <input id="id_matar" name="Película" type="radio" value="id_matar"><label for="id_matar"><img
+                alt="Matar a un ruiseñor"
+                src="MULTIMEDIA/IMG/ruiseñor.jpg">Matar a un
+            ruiseñor</label>
+            <br>
+        </form>
+    </fieldset>
+</section>
+<br>
+<section>
+    <fieldset>
+        <legend><strong>Mejor director</strong></legend>
+        <br>
+        <form id="mejor_director" name="mejor_director" method="post">
+
+            <input id="id_yorgos" name="director" type="radio" value="yorgos">
+            <label for="id_yorgos">Yorgos Lanthimos</label>
+            <br>
+            <input checked id="id_wong" name="director" type="radio"
+                   value="id_wong">
+            <label for="id_wong">Wong Kar Wai</label>
+            <br>
+            <input id="id_kubrik" name="director" type="radio" value="id_kubrik">
+            <label for="id_kubrik">Stanley Kubrik</label>
+            <br>
+            <input id="id_kim" name="director" type="radio" value="id_kim">
+            <label for="id_kim">Kim Ki-duk</label>
+            <br>
+            <input id="id_kurosawa" name="director" type="radio" value="id_kurosawa"> <label for="id_kurosawa">Akira
+            Kurosawa</label>
+            <br>
+        </form>
+    </fieldset>
+</section>
+<br>
+<section>
+    <fieldset>
+        <legend><strong>Mejor actor</strong></legend>
+        <br>
+        <form id="mejor_actor" name="mejor_actor" method="post">
+
+            <input id="id_daniel" name="actor" type="radio" value="daniel">
+            <label for="id_daniel">Daniel Day-Lewis</label>
+            <br>
+            <input checked id="id_douglas" name="actor" type="radio"
+                   value="id_douglas">
+            <label for="id_douglas">Kirk Douglas</label>
+            <br>
+            <input id="id_stanton" name="actor" type="radio" value="id_stanton">
+            <label for="id_stanton">Harry Dean Stanton</label>
+            <br>
+            <input id="id_streep" name="actress" type="radio" value="id_streep">
+            <label for="id_streep">Meryl Streep</label>
+            <br>
+            <input id="id_mcdormand" name="actress" type="radio" value="id_mcdormand"> <label for="id_mcdormand">Frances
+            McDormand</label>
+            <br>
+        </form>
+    </fieldset>
+</section>
+<br>
+<section>
+    <fieldset>
+        <legend><strong>Selecciona las visionadas</strong></legend>
+        <form id="visionadas" name="visionadas" method="post">
+        <input id="pelicula1" name="pelicula1" type="checkbox" value="el_ladron_de_bicicletas">
+        <label for="pelicula1">El ladrón de bicicletas</label>
+        <br>
+        <input id="pelicula2" name="pelicula2" type="checkbox" value="Deseando_amar">
+        <label for="pelicula2">Deseando amar</label>
+        <br>
+        <input id="pelicula3" name="pelicula3" type="checkbox" value="">
+        <label for="pelicula3">Amanece que no es poco</label>
+        <br>
+        <input id="pelicula4" name="pelicula4" type="checkbox" value="">
+        <label for="pelicula4">En el nombre del padre</label>
+        <br>
+        <input id="pelicula5" name="pelicula5" type="checkbox" value="">
+        <label for="pelicula5">El ángel exterminador</label>
+        <br>
+        <input id="pelicula6" name="pelicula6" type="checkbox" value="">
+        <label for="pelicula6">Hierro 3</label>
+        <br>
+        <input id="pelicula7" name="pelicula7" type="checkbox" value="">
+        <label for="pelicula7">El odio</label>
+        <br>
+        <input id="pelicula8" name="pelicula8" type="checkbox" value="">
+        <label for="pelicula8">Canino</label>
+        <br></form>
+    </fieldset>
+</section>
+<br>
+<aside>
+    <fieldset>
+        <legend><strong>Recomiendanos tu película favorita</strong></legend>
+        <form id="opinión" name="opinión" method="post"></form>
+        <br>
+        <label for="cuadro"><textarea cols="50" id="cuadro" name="cuadro" rows="10"></textarea></label>
+    </fieldset>
+</aside>
+<br>
+<hr>
+<br>
+<input type="submit" value="Enviar">
+<input type="reset" value="borrar"><br>
+<hr>
+<br>
+</body>
+</html>

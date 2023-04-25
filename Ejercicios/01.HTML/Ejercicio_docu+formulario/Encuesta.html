@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Document</title>
+</head>
+<body>
+<header><h1>Participa en nuestros concursos</h1></header>
+<p><strong>Rellena el siguiente formulario para poder presentar las obras</strong></p>
+<form id="datos_personales" method="post" name="datos_personales">
+    <fieldset>
+        <legend><strong>Datos Personales</strong></legend>
+        <br>
+        <label for="id_nombre">Nombre</label><br>
+        <input id="id_nombre" name="nombre" type="text"><br/><br/>
+        <label for="id_apellido">Apellidos:</label><br>
+        <input id="id_apellido" name="apellido" type="text"><br><br>
+        <label for="id_DNI">DNI:</label><br>
+        <input id="id_DNI" name="DNI" type="text"><br><br>
+        <label for="id_email">Introduzca su email</label>
+        <br>
+        <input id="id_email" name="email" placeholder="escriba su email" type="email">
+        <br><br/>
+        <label for="id_fecha">Fecha de nacimiento</label>
+        <br>
+        <input id="id_fecha" name="fecha" type="date">
+        <br><br>
+    </fieldset>
+    <fieldset>
+        <legend><strong>Selecciona un concurso</strong></legend>
+        <br>
+        <input id="id_concurso_mujeres" name="id_concurso_mujeres" type="radio" value="id_concurso_mujeres">
+        <label for="id_concurso_mujeres">XII Concurso de Fotografía polo Día Internacional das Mulleres</label>
+        <br>
+        <input id="id_bwpa" name="id_bwpa" type="radio">
+        <label for="id_bwpa">Black and white photo award</label>
+    </fieldset>
+    <fieldset>
+        <legend><strong>Envianos tu proyecto</strong></legend>
+        <br>
+        <div><label for="file">Solo se admiten archivos .pdf</label><br><br><br>
+            <input accept=".pdf" id="file" multiple name="file" type="file" value="100">
+        </div>
+        <br>
+    </fieldset>
+    <fieldset>
+        <legend><strong>Escribe una breve biografía sobre ti</strong></legend>
+        <br>
+        <label for="bio"><textarea cols="50" id="bio" name="biografia" rows="10"></textarea></label>
+        <br>
+        <input type="button" value="enviar">
+        <input type="reset" value="reset">
+        <br><br>
+        <label for="id_terminos">Aceptar términos y condiciones</label>
+        <input checked id="id_terminos" name="id_terminos" type="checkbox" value="aceptar">
+    </fieldset>
+</form>
+<a href="index.html">Volver</a>
+<br>
+<br>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+    <link href="multimedia/logoweb.png" rel="shortcut icon" type="imagenes/png"/>
+    <title>Position</title>
+    <style>
+        .pepito { /*Si esta clase no fuera relativa, los elementos contenidos con posición absolute se posicionarían en relación al body*/
+            width: 99%;
+            height: auto;
+            opacity: 0.6;
+        }
+
+        div.container {
+            position: relative;
+        }
+
+        .topleft { /*al tener su elemento contenedor un posicionamiento relativo se sitúan tomándolo como referencia*/
+            position: absolute;
+            top: 5%;
+            right: 90%;
+        }
+
+        .topright {
+            position: absolute;
+            top: 5%;
+            left: 90%;
+        }
+
+        .center {
+            position: absolute;
+            top: 50%;
+            bottom: 50%;
+            text-align: center;
+            width: 100%;
+            color: #FF1E1E;
+        }
+
+        .bottomright {
+            position: absolute;
+            bottom: 5%;
+            left: 90%;
+        }
+
+        .bottomleft {
+            position: absolute;
+            bottom: 5%;
+            right: 90%;
+        }
+
+        * {
+            user-select: none;
+        }
+
+    </style>
+</head>
+<body>
+<header>
+    <h1>Position</h1>
+</header>
+<section>
+    <h2>Image Text</h2>
+    <p>Add some text to an image in the top left corner:</p>
+    <div class="container">
+        <img alt="formentera" class="pepito" src="multimedia/formentera.png"/>
+        <div class="topleft">Top Left</div>
+        <div class="topright">Top Right</div>
+        <div class="bottomleft">Bottom Left</div>
+        <div class="bottomright">Bottom Right</div>
+        <div class="center">Centered</div>
+    </div>
+</section>
+<footer>
+    <details>
+        <summary>&copy; Tame Formación</summary>
+        <p>Todos los derechos reservados</p>
+    </details>
+
+</footer>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+          name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>CSS - Selectores</title>
+
+    <Style>
+        body {background-color: #FFA200}
+        section div.box {
+            color: fuchsia;
+            font-family: Arial, helvetica, sans-serif;
+            font-size: 15px;
+            font-kerning: normal;
+            font-weight: bolder
+        }
+
+        ul > li {
+            border-top-color: #FFFF00;
+            border-top-style: solid;
+            border-top-width: thick;
+        }
+
+        h1 {
+            font-size: xx-large;
+        }
+
+        h1 + p {
+            background-color: #FF1E1E;
+            color: white
+        }
+
+        #art2 > p {
+            background-color: #00FFD1;
+            color: white
+        }
+
+
+    </Style>
+
+
+</head>
+<body>
+<section>
+    <div class="box">
+        <p>Text in .box</p>
+    </div>
+    <p>Text not in .box</p>
+
+    <ul>
+        <li>Unordered item</li>
+        <li>Unordered item
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+            </ol>
+        </li>
+    </ul>
+
+    <article>
+        <h1>A heading</h1>
+        <p>Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo
+            melon azuki bean garlic.</p>
+
+        <p>Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean
+            collard
+            greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.</p>
+    </article>
+
+    <article id="art2">
+        <h1>A heading</h1>
+        <p>I am a paragraph.</p>
+        <div>I am a div</div>
+        <p>I am another paragraph.</p>
+    </article>
+
+
+</section>
+</body>
+</html>
