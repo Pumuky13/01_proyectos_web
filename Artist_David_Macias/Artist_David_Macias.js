@@ -1,3 +1,5 @@
+
+   /*slider automático*/
     var myIndex = 0;
     carousel();
 
@@ -14,5 +16,4 @@
     x[myIndex - 1].style.display = "block";
     setTimeout(carousel, 3000);
 }
-
 
