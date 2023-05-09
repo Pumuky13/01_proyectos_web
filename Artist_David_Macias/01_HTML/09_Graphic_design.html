@@ -14,7 +14,7 @@
     <meta name="language" content="Spanish">
     <meta name="revisit-after" content="30 days">
     <meta name="author" content="David Macías Navarro">
-    <link rel="stylesheet" href="../Artist_David_Macias.css">
+    <link rel="stylesheet" href="../02_CSS/Graphic_design.css">
     <link rel="shortcut icon" type="imagenes/png" href="../img/favicon.jpg"/>
     <title>Diseño Gráfico</title>
 </head>
@@ -41,7 +41,7 @@
             </li>
         </ul>
         <ul>
-            <li class="has-sub"><a href="./09_Graphic_desing.html">Graphic Design</a>
+            <li class="has-sub"><a href="./09_Graphic_design.html">Graphic Design</a>
         </ul>
 
         <ul>
@@ -50,68 +50,36 @@
     </div>
 </nav>
 <main>
-    <div class="titulo">
-        <article>
-            <p><strong>Días y flores</strong> <br> Homenaje a Silvio Rodríguez</p>
-        </article>
-    </div>
-
+    <article class="texto">
+        <p><strong class="titulo">Días y flores</strong> <br> Homenaje a Silvio Rodríguez</p>
+    </article>
     <div class="contenedor_diapos">
-        <div class="diapos">
-            <div class="misdiapos">
-                <div id="diapo_1" class="diapo">
-                    <img class="diapo_img" src="../img/desing/Dias%20y%20Flores%20(1).jpg"
-                         alt="Cartel Días y Flores variación 1">
-                    <a class="diapo_anterior" href="#diapo_4" title="anterior"></a>
-                    <a class="diapo_siguiente" href="#diapo_2" title="siguiente"></a>
-                </div>
-                <div id="diapo_2" class="diapo">
-                    <img class="diapo_img" src="../img/desing/Dias%20y%20Flores%20(3).jpg"
-                         alt="Cartel Días y Flores variación 2">
-                    <a class="diapo_anterior" href="#diapo_1" title="anterior"></a>
-                    <a class="diapo_siguiente" href="#diapo_3" title="siguiente"></a>
-                </div>
-                <div id="diapo_3" class="diapo">
-                    <img class="diapo_img" src="../img/desing/Dias%20y%20Flores%20(7).jpg"
-                         alt="Cartel Días y Flores variación 3">
-                    <a class="diapo_anterior" href="#diapo_2" title="anterior"></a>
-                    <a class="diapo_siguiente" href="#diapo_4" title="siguiente"></a>
-                </div>
-                <div id="diapo_4" class="diapo">
-                    <img class="diapo_img" src="../img/desing/Dias%20y%20Flores%20(13).jpg"
-                         alt="Cartel Días y Flores variación 4">
-                    <a class="diapo_anterior" href="#diapo_3" title="anterior"></a>
-                    <a class="diapo_siguiente" href="#diapo_5" title="siguiente"></a>
-                </div>
-                <div id="diapo_5" class="diapo">
-                    <img class="diapo_img" src="../img/desing/Dias%20y%20Flores%20(14).jpg"
-                         alt="Cartel Días y Flores variación 5">
-                    <a class="diapo_anterior" href="#diapo_4" title="anterior"></a>
-                    <a class="diapo_siguiente" href="#diapo_1" title="siguiente"></a>
-                </div>
-            </div>
-            <div class="diapo_nav">
-                <a class="diapo_navenlace" href="#diapo_1"></a>
-                <a class="diapo_navenlace" href="#diapo_2"></a>
-                <a class="diapo_navenlace" href="#diapo_3"></a>
-                <a class="diapo_navenlace" href="#diapo_4"></a>
-                <a class="diapo_navenlace" href="#diapo_5"></a>
-            </div>
+        <div class="diapo">
+            <button id="left-btn"><i class="arrow"></i></button>
+            <img src="" id="carousel" alt="">
+            <button id="right-btn"><i class="arrow"></i></button>
         </div>
     </div>
-    <div class="titulo">
-        <article>
-            <p><strong>Capitalism can't spread love</strong></p>
-        </article>
-    </div>
-    <div class="graphic">
-        <img src="../img/desing/can't%20spread%20love%202.jpg"
-             alt="Poster capitalism can't spread love">
+
+    <script src="../03_JS/Graphic_design.js"></script>
+
+
+    <article class="texto">
+        <p><strong class="titulo">Capitalism can't spread love</strong></p>
+    </article>
+
+    <div class="contenedor_diapos">
+        <div class="diapo">
+            <button id="left-btn1"><i class="arrow"></i></button>
+            <img src="" class="carousel1" alt="">
+            <button id="right-btn1"><i class="arrow"></i></button>
+        </div>
     </div>
 
+
     <div class="titulo">
-        <article>
-            <p><strong>Revisiting John Heartfield</strong></p>
+        <article class="texto">
+            <p><strong class="titulo">Revisiting John Heartfield</strong></p>
         </article>
     </div>
 
@@ -119,19 +87,19 @@
         <div class="diapos">
             <div class="misdiapos">
                 <div id="diapo_6" class="diapo">
-                    <img class="diapo_img" src="../img/desing/revisiting%20classics%202.jpg"
+                    <img class="diapo_img" src="../img/design/revisiting%20classics%202.jpg"
                          alt="Revisión de un cartel de la obra de Jhon Heartfield en el contexto de la España de 2022">
                     <a class="diapo_anterior" href="#diapo_8" title="anterior"></a>
                     <a class="diapo_siguiente" href="#diapo_7" title="siguiente"></a>
                 </div>
                 <div id="diapo_7" class="diapo">
-                    <img class="diapo_img" src="../img/desing/revisiting%20classics%201.jpg"
+                    <img class="diapo_img" src="../img/design/revisiting%20classics%201.jpg"
                          alt="Revisión de un cartel de la obra de Jhon Heartfield en el contexto de la España de 2022">
                     <a class="diapo_anterior" href="#diapo_6" title="anterior"></a>
                     <a class="diapo_siguiente" href="#diapo_8" title="siguiente"></a>
                 </div>
                 <div id="diapo_8" class="diapo">
-                    <img class="diapo_img" src="../img/desing/revisiting%20classics%203.jpg"
+                    <img class="diapo_img" src="../img/design/revisiting%20classics%203.jpg"
                          alt="Revisión de un cartel de la obra de Jhon Heartfield en el contexto de la España de 2022">
                     <a class="diapo_anterior" href="#diapo_7" title="anterior"></a>
                     <a class="diapo_siguiente" href="#diapo_6" title="siguiente"></a>
@@ -145,8 +113,8 @@
         </div>
     </div>
     <div class="titulo">
-        <article>
-            <p><strong>Ésto no es</strong></p>
+        <article class="texto">
+            <p><strong class="titulo">Ésto no es</strong></p>
         </article>
     </div>
 
@@ -155,37 +123,37 @@
         <div class="diapos">
             <div class="misdiapos">
                 <div id="diapo_9" class="diapo">
-                    <img class="diapo_img" src="../img/desing/ibero%20poster.jpg" alt="inscripción en Ibero">
+                    <img class="diapo_img" src="../img/design/ibero%20poster.jpg" alt="inscripción en Ibero">
                     <a class="diapo_anterior" href="#diapo_15" title="anterior"></a>
                     <a class="diapo_siguiente" href="#diapo_10" title="siguiente"></a>
                 </div>
                 <div id="diapo_10" class="diapo">
-                    <img class="diapo_img" src="../img/desing/latín%20poster.jpg" alt="inscripción en Latín">
+                    <img class="diapo_img" src="../img/design/latín%20poster.jpg" alt="inscripción en Latín">
                     <a class="diapo_anterior" href="#diapo_9" title="anterior"></a>
                     <a class="diapo_siguiente" href="#diapo_11" title="siguiente"></a>
                 </div>
                 <div id="diapo_11" class="diapo">
-                    <img class="diapo_img" src="../img/desing/arabe%20poster.jpg" alt="inscripción en Árabe">
+                    <img class="diapo_img" src="../img/design/arabe%20poster.jpg" alt="inscripción en Árabe">
                     <a class="diapo_anterior" href="#diapo_10" title="anterior"></a>
                     <a class="diapo_siguiente" href="#diapo_12" title="siguiente"></a>
                 </div>
                 <div id="diapo_12" class="diapo">
-                    <img class="diapo_img" src="../img/desing/vasco%20poster.jpg" alt="inscripción en Euskera">
+                    <img class="diapo_img" src="../img/design/vasco%20poster.jpg" alt="inscripción en Euskera">
                     <a class="diapo_anterior" href="#diapo_11" title="anterior"></a>
                     <a class="diapo_siguiente" href="#diapo_13" title="siguiente"></a>
                 </div>
                 <div id="diapo_13" class="diapo">
-                    <img class="diapo_img" src="../img/desing/catalán%20poster.jpg" alt="inscripción en Catalán">
+                    <img class="diapo_img" src="../img/design/catalán%20poster.jpg" alt="inscripción en Catalán">
                     <a class="diapo_anterior" href="#diapo_12" title="anterior"></a>
                     <a class="diapo_siguiente" href="#diapo_14" title="siguiente"></a>
                 </div>
                 <div id="diapo_14" class="diapo">
-                    <img class="diapo_img" src="../img/desing/gallego%20póster.jpg" alt="inscripción en Gallego">
+                    <img class="diapo_img" src="../img/design/gallego%20póster.jpg" alt="inscripción en Gallego">
                     <a class="diapo_anterior" href="#diapo_13" title="anterior"></a>
                     <a class="diapo_siguiente" href="#diapo_15" title="siguiente"></a>
                 </div>
                 <div id="diapo_15" class="diapo">
-                    <img class="diapo_img" src="../img/desing/portugués%20poster.jpg" alt="inscripción en Portugues">
+                    <img class="diapo_img" src="../img/design/portugués%20poster.jpg" alt="inscripción en Portugues">
                     <a class="diapo_anterior" href="#diapo_14" title="anterior"></a>
                     <a class="diapo_siguiente" href="#diapo_9" title="siguiente"></a>
                 </div>
@@ -202,35 +170,35 @@
         </div>
     </div>
     <div class="titulo">
-        <article>
-            <p><strong>El color más feo del mundo</strong></p>
+        <article class="texto">
+            <p><strong class="titulo">El color más feo del mundo</strong></p>
         </article>
     </div>
 
     <div class="graphic">
-        <img src="../img/desing/El%20color%20más%20feo%20del%20mundo.jpg" alt="">
+        <img src="../img/design/El%20color%20más%20feo%20del%20mundo.jpg" alt="">
     </div>
 
     <div class="titulo">
-        <article>
-            <p><strong>Hasta morir si es preciso</strong></p>
+        <article class="texto">
+            <p><strong class="titulo">Hasta morir si es preciso</strong></p>
         </article>
 
     </div>
     <div class="graphic">
-        <img src="../img/desing/Subcomandante%20Marcos.jpg" alt="">
+        <img src="../img/design/Subcomandante%20Marcos.jpg" alt="">
     </div>
     <div class="titulo">
-        <article>
-            <p><strong>Eat the rich</strong></p>
+        <article class="texto">
+            <p><strong class="titulo">Eat the rich</strong></p>
         </article>
     </div>
     <div class="graphic">
-        <img src="../img/desing/eat%20the%20rich%20(2).jpg" alt="">
+        <img src="../img/design/eat%20the%20rich%20(2).jpg" alt="">
     </div>
     <div class="titulo">
-        <article>
-            <p><strong>Yonkis</strong></p>
+        <article class="texto">
+            <p><strong class="titulo">Yonkis</strong></p>
         </article>
     </div>
 
@@ -238,18 +206,18 @@
         <div class="diapos">
             <div class="misdiapos">
                 <div id="diapo_16" class="diapo">
-                    <img class="diapo_img" src="../img/desing/compro%20oro.jpg" alt="Cartel compro oro">
+                    <img class="diapo_img" src="../img/design/compro%20oro.jpg" alt="Cartel compro oro">
                     <a class="diapo_anterior" href="#diapo_18" title="anterior"></a>
                     <a class="diapo_siguiente" href="#diapo_17" title="siguiente"></a>
                 </div>
                 <div id="diapo_17" class="diapo">
-                    <img class="diapo_img" src="../img/desing/Yonquis%20del%20litio%202.jpg"
+                    <img class="diapo_img" src="../img/design/Yonquis%20del%20litio%202.jpg"
                          alt="Cartel yonkis del litio">
                     <a class="diapo_anterior" href="#diapo_16" title="anterior"></a>
                     <a class="diapo_siguiente" href="#diapo_18" title="siguiente"></a>
                 </div>
                 <div id="diapo_18" class="diapo">
-                    <img class="diapo_img" src="../img/desing/AMANTES%20DEL%20COLTAN.jpg"
+                    <img class="diapo_img" src="../img/design/AMANTES%20DEL%20COLTAN.jpg"
                          alt="Cartel amantes del coltán">
                     <a class="diapo_anterior" href="#diapo_17" title="anterior"></a>
                     <a class="diapo_siguiente" href="#diapo_16" title="siguiente"></a>
@@ -264,41 +232,41 @@
     </div>
 
     <div class="titulo">
-        <article>
-            <p><strong>Fuego al capital</strong></p>
+        <article class="texto">
+            <p><strong class="titulo">Fuego al capital</strong></p>
         </article>
     </div>
     <div class="graphic">
-        <img src="../img/desing/fuego%20al%20capital.jpg" alt="">
+        <img src="../img/design/fuego%20al%20capital.jpg" alt="">
     </div>
     <div class="titulo">
-        <article>
-            <p><strong>AMEN</strong></p>
+        <article class="texto">
+            <p><strong class="titulo">AMEN</strong></p>
         </article>
     </div>
     <div class="graphic">
-        <img src="../img/desing/AMEN.jpg" alt="">
+        <img src="../img/design/AMEN.jpg" alt="">
     </div>
     <div class="titulo">
-        <article>
-            <p><strong>la hora del almuerzo</strong></p>
+        <article class="texto">
+            <p><strong class="titulo">la hora del almuerzo</strong></p>
         </article>
     </div>
     <div class="graphic">
-        <img src="../img/desing/1312-02.jpg" alt="">
+        <img src="../img/design/1312-02.jpg" alt="">
     </div>
     <div class="titulo">
-        <article>
-            <p><strong>No es globalización</strong></p>
+        <article class="texto">
+            <p><strong class="titulo">No es globalización</strong></p>
         </article>
     </div>
     <div class="graphic">
-        <img src="../img/desing/imperialismo-01.jpg"
+        <img src="../img/design/imperialismo-01.jpg"
              alt="">
     </div>
     <div class="titulo">
-        <article>
-            <p><strong>Free font desire</strong></p>
+        <article class="texto">
+            <p><strong class="titulo">Free font desire</strong></p>
         </article>
     </div>
 
@@ -306,13 +274,13 @@
         <div class="diapos">
             <div class="misdiapos">
                 <div id="diapo_19" class="diapo">
-                    <img class="diapo_img" src="../img/desing/Free%20font%20desire%201.jpg"
+                    <img class="diapo_img" src="../img/design/Free%20font%20desire%201.jpg"
                          alt="Cartel free font desire versión 1">
                     <a class="diapo_anterior" href="#diapo_20" title="anterior"></a>
                     <a class="diapo_siguiente" href="#diapo_20" title="siguiente"></a>
                 </div>
                 <div id="diapo_20" class="diapo">
-                    <img class="diapo_img" src="../img/desing/Free%20font%20desire.jpg"
+                    <img class="diapo_img" src="../img/design/Free%20font%20desire.jpg"
                          alt="Cartel free font desire versión 2">
                     <a class="diapo_anterior" href="#diapo_19" title="anterior"></a>
                     <a class="diapo_siguiente" href="#diapo_19" title="siguiente"></a>
@@ -325,17 +293,17 @@
         </div>
     </div>
     <div class="titulo">
-        <article>
-            <p><strong>Tetris</strong></p>
+        <article class="texto">
+            <p><strong class="titulo">Tetris</strong></p>
         </article>
     </div>
     <div class="graphic">
-        <img src="../img/desing/Tetris-01.jpg"
+        <img src="../img/design/Tetris-01.jpg"
              alt="">
     </div>
 </main>
 <a href="#menu" class="boton">&#129173;</a>
-<footer class="footer"><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img
+<footer class="footer"><a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/"><img
         alt="Licencia de Creative Commons" style="border-width:0"
         src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png"/></a>
 </footer>

@@ -14,7 +14,7 @@
     <meta content="Spanish" name="language">
     <meta content="30 days" name="revisit-after">
     <meta content="David Macías Navarro" name="author">
-    <link href="../Artist_David_Macias.css" rel="stylesheet">
+    <link href="../02_CSS/TIme_to_pretend.css" rel="stylesheet">
     <link rel="shortcut icon" type="imagenes/png" href="../img/favicon.jpg"/>
     <title>Time to pretend</title>
 </head>
@@ -41,7 +41,7 @@
             </li>
         </ul>
         <ul>
-            <li class="has-sub"><a href="09_Graphic_desing.html">Graphic Design</a>
+            <li class="has-sub"><a href="09_Graphic_design.html">Graphic Design</a>
         </ul>
 
         <ul>
@@ -51,43 +51,19 @@
 </nav>
 <main>
     <div class="contenedor_diapos">
-        <div class="diapos">
-            <div class="misdiapos">
-                <div class="diapo" id="diapo_1">
-                    <img alt="time to pretend" class="diapo_img" src="../img/10%20(2).jpg">
-                    <a class="diapo_anterior" href="#diapo_4" title="anterior"></a>
-                    <a class="diapo_siguiente" href="#diapo_2" title="siguiente"></a>
-                </div>
-                <div class="diapo" id="diapo_2">
-                    <img alt="time to pretend" class="diapo_img" src="../img/3a.jpg">
-                    <a class="diapo_anterior" href="#diapo_1" title="anterior"></a>
-                    <a class="diapo_siguiente" href="#diapo_3" title="siguiente"></a>
-                </div>
-                <div class="diapo" id="diapo_3">
-                    <img alt="time to pretend" class="diapo_img" src="../img/time%20to%20pretend%20(23).jpg">
-                    <a class="diapo_anterior" href="#diapo_2" title="anterior"></a>
-                    <a class="diapo_siguiente" href="#diapo_4" title="siguiente"></a>
-                </div>
-                <div class="diapo" id="diapo_4">
-                    <img alt="time to pretend" class="diapo_img" src="../img/libro%20foto00262.jpg">
-                    <a class="diapo_anterior" href="#diapo_3" title="anterior"></a>
-                    <a class="diapo_siguiente" href="#diapo_1" title="siguiente"></a>
-                </div>
-            </div>
-            <div class="diapo_nav">
-                <a class="diapo_navenlace" href="#diapo_1"></a>
-                <a class="diapo_navenlace" href="#diapo_2"></a>
-                <a class="diapo_navenlace" href="#diapo_3"></a>
-                <a class="diapo_navenlace" href="#diapo_4"></a>
-            </div>
+        <div class="diapo">
+            <button id="left-btn"><i class="arrow"></i></button>
+            <img  src="" id="carousel" alt="">
+            <button id="right-btn"><i class="arrow"></i></button>
         </div>
     </div>
 </main>
+<script src="../03_JS/Time_to_pretend.js"></script>
 <br><br>
 <div class="texto">
-    <article><p><strong>Time to pretend</strong><br><br>
+    <article><p><strong class="titulo">Time to pretend</strong><br><br>
 
-        <strong>ESP</strong><br><br>
+        <strong class="titulo">ESP</strong><br><br>
 
         “Es difícil concebir una cultura indiferente a la eternidad, que rechaza lo durable. Es igualmente difícil
         concebir
@@ -227,7 +203,7 @@
         consumo, las dificultades que conlleva el no poseer un nivel de ingresos que permite tener una vida
         acomodada y de
         cómo se refleja en el tipo de productos que consumen.<br><br>
-        <strong>ENG</strong><br><br>
+        <strong class="titulo">ENG</strong><br><br>
 
         "It is difficult to conceive a culture indifferent to eternity, which rejects durability. It is equally
         difficult to
@@ -359,7 +335,7 @@
     </p></article>
 </div>
 <a href="#menu" class="boton">&#129173;</a>
-<footer class="footer"><a href="http://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license"><img
+<footer class="footer"><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" rel="license"><img
         alt="Licencia de Creative Commons" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png"
         style="border-width:0"/></a>
 </footer>

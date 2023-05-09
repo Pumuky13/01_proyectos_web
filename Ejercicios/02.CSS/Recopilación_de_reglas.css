@@ -327,4 +327,102 @@ animation-iteration-count: infinite;}
         z-index: 3;
     }
 }
-/*************************************************************************************************************************/
+/*********************************************************************************************************************/
+
+/*Slider CSS*/
+.contenedor_diapos {
+    display: block;
+    width: 100%;
+    margin: 2% auto;
+}
+
+.diapos {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    overflow: auto;
+    position: relative;
+}
+
+.misdiapos {
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+    position: relative;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+}
+
+.diapo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    height: auto;
+    scroll-snap-align: center;
+    box-sizing: border-box;
+    transform-origin: center center;
+    transform: scale(1);
+}
+
+.diapo_img {
+    width: 100%;
+    height: auto;
+}
+
+.diapo a {
+    background: none;
+    border: none;
+}
+
+a.diapo_anterior,
+.diapos::before {
+    transform: rotate(135deg);
+    left: 1%;
+}
+
+a.diapo_siguiente,
+.diapos::after {
+    transform: rotate(-45deg);
+    right: 1%;
+}
+
+.diapos::before,
+.diapos::after,
+.diapo_anterior,
+.diapo_siguiente {
+    position: absolute;
+    top: 50%;
+    width: 35px;
+    height: 35px;
+    border: solid #00277e;
+    border-width: 0 4px 4px 0;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+.diapos::before,
+.diapos::after {
+    content: "";
+    z-index: 1;
+    background: none;
+    pointer-events: none;
+    top: 45%;
+}
+
+.diapo_nav {
+    padding: 3%;
+    display: inline-grid;
+    grid-auto-flow: column;
+}
+
+.diapo_navenlace {
+    display: block;
+    height: 15px;
+    width: 15px;
+    border-radius: 80%;
+    background-color: #00277e;
+}
+/*--------------------------------------------------------------------------------------------------------------*/

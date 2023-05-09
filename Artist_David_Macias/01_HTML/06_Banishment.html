@@ -14,7 +14,7 @@
     <meta name="language" content="Spanish">
     <meta name="revisit-after" content="30 days">
     <meta name="author" content="David Macías Navarro">
-    <link rel="stylesheet" href="../Artist_David_Macias.css">
+    <link rel="stylesheet" href="../02_CSS/Banishment.css">
     <link rel="shortcut icon" type="imagenes/png" href="../img/favicon.jpg"/>
     <title>Banishment</title>
 </head>
@@ -41,7 +41,7 @@
             </li>
         </ul>
         <ul>
-            <li class="has-sub"><a href="09_Graphic_desing.html">Graphic Design</a>
+            <li class="has-sub"><a href="09_Graphic_design.html">Graphic Design</a>
         </ul>
 
         <ul>
@@ -50,67 +50,20 @@
     </div>
 </nav>
 <main>
-    <div class="diapos">
-        <div class="misdiapos">
-            <div id="diapo_1" class="diapo">
-                <img class="diapo_img" src="../img/30.jpg"
-                     alt="Fotografía perteneciente a la serie Banishment, mostrando la entrada de una casa con unas letras neon encima de la puerta en las que se puede leer la palabra home">
-                <a class="diapo_anterior" href="#diapo_7" title="anterior"></a>
-                <a class="diapo_siguiente" href="#diapo_2" title="siguiente"></a>
-            </div>
-            <div id="diapo_2" class="diapo">
-                <img class="diapo_img" src="../img/10.jpg"
-                     alt="Fotografía perteneciente a la serie Banishment, mostrando una persona de espaldas que se está cambiando la ropa de calle por la de trabajo en un pasillo con taquillas">
-                <a class="diapo_anterior" href="#diapo_1" title="anterior"></a>
-                <a class="diapo_siguiente" href="#diapo_3" title="siguiente"></a>
-            </div>
-            <div id="diapo_3" class="diapo">
-                <img class="diapo_img" src="../img/38.jpg"
-                     alt="Fotografía perteneciente a la serie Banishment, mostrando un cuadro de una escena paradisiaca en estilo surrealista encastrado tras una tubería de un conducto de aire comprimido de una fábrica">
-                <a class="diapo_anterior" href="#diapo_2" title="anterior"></a>
-                <a class="diapo_siguiente" href="#diapo_4" title="siguiente"></a>
-            </div>
-            <div id="diapo_4" class="diapo">
-                <img class="diapo_img" src="../img/libro%20foto00259.jpg"
-                     alt="Fotografía del detalle del fotolibro de la serie Banishment">
-                <a class="diapo_anterior" href="#diapo_3" title="anterior"></a>
-                <a class="diapo_siguiente" href="#diapo_5" title="siguiente"></a>
-            </div>
-            <div id="diapo_5" class="diapo">
-                <img class="diapo_img" src="../img/libro%20foto00267.jpg"
-                     alt="Fotografía del detalle del fotolibro de la serie Banishment">
-                <a class="diapo_anterior" href="#diapo_4" title="anterior"></a>
-                <a class="diapo_siguiente" href="#diapo_6" title="siguiente"></a>
-            </div>
-            <div id="diapo_6" class="diapo">
-                <img class="diapo_img" src="../img/libro%20foto00269.jpg"
-                     alt="Fotografía del detalle del fotolibro de la serie Banishment">
-                <a class="diapo_anterior" href="#diapo_5" title="anterior"></a>
-                <a class="diapo_siguiente" href="#diapo_7" title="siguiente"></a>
-            </div>
-            <div id="diapo_7" class="diapo">
-                <img class="diapo_img" src="../img/libro%20foto00270.jpg"
-                     alt="Fotografía del detalle del fotolibro de la serie Banishment">
-                <a class="diapo_anterior" href="#diapo_6" title="anterior"></a>
-                <a class="diapo_siguiente" href="#diapo_1" title="siguiente"></a>
-            </div>
-        </div>
-        <div class="diapo_nav">
-            <a class="diapo_navenlace" href="#diapo_1"></a>
-            <a class="diapo_navenlace" href="#diapo_2"></a>
-            <a class="diapo_navenlace" href="#diapo_3"></a>
-            <a class="diapo_navenlace" href="#diapo_4"></a>
-            <a class="diapo_navenlace" href="#diapo_5"></a>
-            <a class="diapo_navenlace" href="#diapo_6"></a>
-            <a class="diapo_navenlace" href="#diapo_7"></a>
+    <div class="contenedor_diapos">
+        <div class="diapo">
+            <button id="left-btn"><i class="arrow"></i></button>
+            <img  src="" id="carousel" alt="">
+            <button id="right-btn"><i class="arrow"></i></button>
         </div>
     </div>
 </main>
+<script src="../03_JS/Banishment.js"></script>
 <div class="texto">
     <article>
-        <p><strong>Banishment</strong> <br><br>
+        <p><strong class="titulo">Banishment</strong> <br><br>
 
-            <strong>ESP</strong> <br><br>
+            <strong class="titulo">ESP</strong> <br><br>
 
             La crisis económica de la zona Euro ha generado una tasa de desempleo juvenil en España de más del 50%,
             generando una situación que empuja a muchos de esos jóvenes a tomar la decisión de emprender un angosto
@@ -126,7 +79,7 @@
             que he encontrado en Inglaterra y en la mía propia como inmigrante, retratando situaciones que evocan las
             dificultades, anhelos y nuevas costumbres que surgen en este contexto. <br><br>
 
-            <strong>ENG</strong> <br><br>
+            <strong class="titulo">ENG</strong> <br><br>
 
             The economic crisis in the Euro zone has generated a youth unemployment rate in Spain of over 50% generating
             a situation that pushes many of these young people to make the decision to undertake a narrow road to other
@@ -144,7 +97,7 @@
     </article>
 </div>
 <a href="#menu" class="boton">&#129173;</a>
-<footer class="footer"><a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img
+<footer class="footer"><a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/"><img
         alt="Licencia de Creative Commons" style="border-width:0"
         src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png"/></a>
 </footer>
